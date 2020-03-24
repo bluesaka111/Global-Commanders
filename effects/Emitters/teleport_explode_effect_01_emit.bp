@@ -1,0 +1,6 @@
+EmitterBlueprint {
+
+	Merge = true,
+	LODCutoff = 500.00,
+	
+}

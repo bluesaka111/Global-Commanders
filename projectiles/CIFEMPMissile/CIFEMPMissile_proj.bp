@@ -1,0 +1,77 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'Impacts',
+            Cue = 'CYB_Expl_Med_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Land_Gen_CYBRAN',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_CYBRAN',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'CYBRAN',
+        'PROJECTILE',
+        'INDIRECTFIRE',
+        ###'TACTICAL',
+        'MISSILE',
+        'NOSPLASHDAMAGE',
+    },
+    Display = {
+        CameraFollowTimeout = 2,
+        CameraFollowsProjectile = true,
+        ImpactEffects = {
+            Type = 'Medium02',
+        },
+        Mesh = {
+            LODs = {
+                {
+                    LODCutoff = 150,
+                    AlbedoName = '/projectiles/CIFMissileTactical01/CIFMissileTactical01_albedo.dds',
+                    MeshName = '/projectiles/CIFMissileTactical01/CIFMissileTactical01_lod0.scm',
+		    NormalsName = '/projectiles/CIFMissileTactical01/CIFMissileTactical01_NormalsTS.dds',
+		    SpecularName = '/projectiles/CIFMissileTactical01/CIFMissileTactical01_SpecTeam.dds',
+                    ShaderName = 'TMeshNoLighting',
+                },
+            },
+        },
+        StrategicIconSize = 2,
+        UniformScale = 0.13,
+    },
+    General = {
+        Category = 'Missile',
+        EntityCategory = {
+            'CYBRAN',
+            'PROJECTILE',
+            'INDIRECTFIRE',
+            ###'TACTICAL',
+            'MISSILE',
+            'CYBRANMOBILEMISSILE',
+            'NOSPLASHDAMAGE',
+        },
+        Faction = 'Cybran',
+    },
+    Interface = {
+        HelpText = 0,
+    },
+    Physics = {
+        Acceleration = 3,
+        DestroyOnWater = true,
+        InitialSpeed = 3,
+        MaxSpeed = 120,
+        RotationalVelocity = 0,
+        RotationalVelocityRange = 0,
+        TrackTarget = true,
+        TrackTargetGround = true,
+        TurnRate = 0,
+        UseGravity = false,
+        VelocityAlign = true,
+    },
+}

@@ -1,0 +1,72 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'Impacts',
+            Cue = 'AEON_Expl_Med_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Land_Gen_AEON',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_AEON',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'AEON',
+        'PROJECTILE',
+        'INDIRECTFIRE',
+        'TACTICAL',
+        'MISSILE',
+        'NOSPLASHDAMAGE',
+    },
+    Defense = {
+        Health = 5,
+        MaxHealth = 5,
+    },
+    Display = {
+        CameraFollowTimeout = 5,
+        CameraFollowsProjectile = true,
+        ImpactEffects = {
+            Type = 'Medium01',
+        },
+        Mesh = {
+            IconFadeInZoom = 200,
+            LODs = {
+                {
+                    AlbedoName = '/projectiles/AIFQuantumWarhead01/AIFQuantumWarhead01_albedo.dds',
+                    MeshName = '/projectiles/AIFQuantumWarhead01/AIFQuantumWarhead01_lod0.scm',
+		    NormalsName = '/projectiles/AIFQuantumWarhead01/AIFQuantumWarhead01_NormalsTS.dds',
+		    SpecularName = '/projectiles/AIFQuantumWarhead01/AIFQuantumWarhead01_SpecTeam.dds',
+                    ShaderName = 'TMeshAlpha',
+                },
+            },
+        },
+        StrategicIconSize = 3,
+        UniformScale = 0.04,
+    },
+    General = {
+        Category = 'Missile',
+        Faction = 'AEON',
+    },
+    Physics = {
+        Acceleration = 3,
+        CollideEntity = false,
+        CollideSurface = false,
+        DestroyOnWater = false,
+        InitialSpeed = 0,
+        Lifetime = 600,
+        MaxSpeed = 40,
+        RotationalVelocity = 0,
+        RotationalVelocityRange = 0,
+        TrackTarget = true,
+        TrackTargetGround = true,
+        TurnRate = 0,
+        UseGravity = false,
+        VelocityAlign = true,
+    },
+}

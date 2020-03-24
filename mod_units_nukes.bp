@@ -1,0 +1,223 @@
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="uab2305",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+
+    Categories = {
+        'PRODUCTSC1',
+        'SELECTABLE',
+        'BUILTBYTIER3COMMANDER',
+		'BUILTBYTIER3ENGINEER',
+		'BUILTBYTIER3SUBCOMMANDER',
+        'AEON',
+        'STRUCTURE',
+        'STRATEGIC',
+        'TECH3',
+        'NUKE',
+        'SILO',
+        'DRAGBUILD',
+        'SIZE12',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SORTSTRATEGIC',
+    },
+	
+	Economy = {
+		BuildRate = 10000,
+	},
+	
+    Weapon = {
+        {
+            ProjectileId = '/mods/Global Commanders/projectiles/AIFQuantumNukeMissile/AIFQuantumNukeMissile_proj.bp',
+        },
+    },
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="uas0304",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+
+    Weapon = {
+        {
+            ProjectileId = '/mods/Global Commanders/projectiles/AIFQuantumSubNukeMissile/AIFQuantumSubNukeMissile_proj.bp',
+        },
+    },
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="ueb2305",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+
+    Categories = {
+        'PRODUCTSC1',
+        'SELECTABLE',
+        'BUILTBYTIER3COMMANDER',
+		'BUILTBYTIER3ENGINEER',
+		'BUILTBYTIER3SUBCOMMANDER',
+        'UEF',
+        'STRUCTURE',
+        'STRATEGIC',
+        'TECH3',
+        'NUKE',
+        'SILO',
+        'DRAGBUILD',
+        'SIZE12',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SORTSTRATEGIC',
+    },
+		
+	Economy = {
+		BuildRate = 10000,
+	},
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="ues0304",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="urb2305",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+
+    Categories = {
+        'PRODUCTSC1',
+        'SELECTABLE',
+        'BUILTBYTIER3COMMANDER',
+		'BUILTBYTIER3ENGINEER',
+		'BUILTBYTIER3SUBCOMMANDER',
+        'CYBRAN',
+        'STRUCTURE',
+        'STRATEGIC',
+        'TECH3',
+        'NUKE',
+        'SILO',
+        'DRAGBUILD',
+        'SIZE12',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SORTSTRATEGIC',
+    },
+	
+	Economy = {
+		BuildRate = 10000,
+	},
+	
+    Weapon = {
+        {
+            ProjectileId = '/mods/Global Commanders/projectiles/CIFEMPNukeMissile/CIFEMPNukeMissile_proj.bp',
+        },
+    },
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="urs0304",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+
+    Weapon = {
+        {
+            ProjectileId = '/mods/Global Commanders/projectiles/CIFSubNukeMissile/CIFSubNukeMissile_proj.bp',
+        },
+    },
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="xsb2305",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+
+    Categories = {
+        'PRODUCTFA',
+        'SELECTABLE',
+        'BUILTBYTIER3COMMANDER',
+		'BUILTBYTIER3ENGINEER',
+		'BUILTBYTIER3SUBCOMMANDER',
+        'SERAPHIM',
+        'STRUCTURE',
+        'STRATEGIC',
+        'TECH3',
+        'NUKE',
+        'SILO',
+        'DRAGBUILD',
+        'SIZE12',
+        'VISIBLETORECON',
+        'RECLAIMABLE',
+        'SORTSTRATEGIC',
+    },
+	
+	Economy = {
+		BuildRate = 10000,
+	},
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="xsb2401",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+}
+
+UnitBlueprint {
+    Merge = true,
+    BlueprintId="xss0302",
+
+    Audio = {
+        NuclearLaunchDetected = Sound {
+            Bank = 'VO_BattlePackSB',
+            Cue = 'VOC_COMPUTER_Strategic_Launch_',
+        },
+    },
+}

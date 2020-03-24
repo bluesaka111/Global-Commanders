@@ -1,0 +1,61 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'Impacts',
+            Cue = 'UEF_Expl_Med_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Land_Gen_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'UEF',
+        'PROJECTILE',
+        'ANTIAIR',
+        'MISSILE',
+    },
+    Display = {
+        Mesh = {
+            LODs = {
+                {
+                    AlbedoName = '/projectiles/TAAMissileFlayer01/TAAMissileFlayer01_albedo.dds',
+                    MeshName = '/projectiles/TAAMissileFlayer01/TAAMissileFlayer01_lod0.scm',
+		    NormalsName = '/projectiles/TAAMissileFlayer01/TAAMissileFlayer01_NormalsTS.dds',
+                    ShaderName = 'NormalMappedAlpha',
+                },
+            },
+        },
+        StrategicIconSize = 2,
+        UniformScale = 0.03,
+    },
+    General = {
+        Category = 'Anti Air',
+        Faction = 'UEF',
+        TechLevel = 3,
+        Weapon = 'Flayer SAM Launcher',
+    },
+    Interface = {
+        HelpText = 0,
+    },
+    Physics = {
+        Acceleration = 6,
+        DestroyOnWater = true,
+        InitialSpeed = 30,
+        LeadTarget = false,
+        Lifetime = 4,
+        MaxSpeed = 50,
+        OnLostTargetLifetime = 0.7,
+        TrackTarget = true,
+        TurnRate = 180,
+        UseGravity = false,
+        VelocityAlign = true,
+    },
+}

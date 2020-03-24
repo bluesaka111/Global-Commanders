@@ -1,0 +1,55 @@
+ProjectileBlueprint {
+    Audio = {
+        Impact = Sound {
+            Bank = 'Impacts',
+            Cue = 'UEF_Expl_Med_Impact',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactTerrain = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Land_Gen_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+        ImpactWater = Sound {
+            Bank = 'Impacts',
+            Cue = 'Impact_Water_Splash_UEF',
+            LodCutoff = 'Weapon_LodCutoff',
+        },
+    },
+    Categories = {
+        'UEF',
+        'PROJECTILE',
+        'DIRECTFIRE',
+    },
+    Defense = {
+        Health = 100,
+        MaxHealth = 100,
+    },
+    Display = {
+        CameraFollowTimeout = 5,
+        CameraFollowsProjectile = false,
+        ImpactEffects = {
+            Type = 'Medium01',
+        },
+        MeshBlueprint = '/projectiles/CIFMolecularResonanceShell01/CIFMolecularResonanceShell01_mesh.bp',
+        StrategicIconName = '/textures/ui/common/game/strategicicons/icon_strategic_artillery.dds',
+        StrategicIconSize = 2,
+        UniformScale = 0.08,
+    },
+    General = {
+        Category = 'Direct Fire',
+        Faction = 'UEF',
+        TechLevel = 1,
+        Weapon = 'Cannon',
+    },
+    Interface = {
+        HelpText = 0,
+    },
+    Physics = {
+        DestroyOnWater = true,
+        LeadTarget = true,
+        Lifetime = 8,
+        TurnRate = 360,
+        VelocityAlign = true,
+    },
+}
