@@ -96,7 +96,6 @@ GRA0002 = Class(CAirUnit) {
         IssueClearCommands(self)
         if not self.Parent:IsDead() then
             self.Parent:NotifyOfDroneDeath(self.Drone)
-            table.removeByValue(self.Parent.DroneTable, self)
             self.Parent = nil
         end
         CAirUnit.OnKilled(self, instigator, type, overkillRatio)

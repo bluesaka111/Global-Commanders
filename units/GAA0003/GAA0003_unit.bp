@@ -136,6 +136,7 @@ UnitBlueprint {
         NaturalProducer = true,
         ProductionPerSecondEnergy = 5500,
         ProductionPerSecondMass = 50,
+		MaxBuildDistance = 40,
     },
     Footprint = {
         MaxSlope = 0.25,

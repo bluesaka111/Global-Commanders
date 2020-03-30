@@ -1,9 +1,9 @@
 name = "Global Commanders Enhanced"
-uid = "2A72CDD6-7248-11DF-8F51-40B0DFD7208611"
+uid = "89BEB393-BD48-43C1-AC7A-805E7665EB10"
 version = 4
 copyright = "Mavr390,Coshina"
 description = "Add many powerful upgrades all commanders. AI not support. Version 3.6.\nFix: Campaign compatible (FA 1.6.6)\nFix: Cybran ACU's artillery incorrect bone setup\nNext version:\n+ AI support\n+ Rebalance\nCompatible with (Steam 1.6.6):\n+ BrewLAN\n+ 4th Dimension 2.12\n+ Total Mayhem 1.36 all version\n+ Extreme Wars 1.3 all version"
-author = "Mavr390 (Bugfixes by bluesaka111)"
+author = "bluesaka111"
 icon = "/mods/Global Commanders Enhanced/GC.png"
 selectable = true
 enabled = true

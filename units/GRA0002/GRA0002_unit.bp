@@ -89,8 +89,8 @@ UnitBlueprint {
         'CYBRAN',
         'MOBILE',
         'AIR',
-	'ANTIAIR',
-	'DIRECTFIRE',
+		'ANTIAIR',
+		'DIRECTFIRE',
         'HIGHALTAIR',
         'TECH1',
         'POD',
@@ -98,7 +98,7 @@ UnitBlueprint {
         'RECLAIMABLE',
         'SHOWATTACKRETICLE',
         'OVERLAYANTIAIR',
-	'OVERLAYDIRECTFIRE',
+		'OVERLAYDIRECTFIRE',
     },
     CollisionOffsetZ = -0.07,
     Defense = {
@@ -133,6 +133,8 @@ UnitBlueprint {
         BuildCostEnergy = 15000,
         BuildCostMass = 2000,
         BuildTime = 1000,
+		BuildRate = 200,
+		MaxBuildDistance = 40,
     },
     Footprint = {
         MaxSlope = 0.25,
@@ -141,12 +143,10 @@ UnitBlueprint {
     },
     General = {
 		BuildBones = {
-            AimBone = Laser_Muzzle,
+            BuildBones = {
             BuildEffectBones = {
-                'Laser_Muzzle',
+                0,
             },
-            PitchBone = 'Laser_Muzzle',
-            YawBone = 'URA0002',
         },
         CapCost = 0,
         Category = 'Gunship',
@@ -155,7 +155,7 @@ UnitBlueprint {
             RULEUCC_Attack = true,
             RULEUCC_CallTransport = true,
             RULEUCC_Capture = false,
-            RULEUCC_Dock = true,
+            RULEUCC_Dock = false,
             RULEUCC_Guard = true,
             RULEUCC_Move = true,
             RULEUCC_Nuke = false,

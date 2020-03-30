@@ -142,8 +142,9 @@ UnitBlueprint {
     Economy = {
         BuildCostEnergy = 1600,
         BuildCostMass = 160,
-        BuildRate = 180,
+        BuildRate = 200,
         BuildTime = 400,
+		MaxBuildDistance = 40,
         MaintenanceConsumptionPerSecondEnergy = 500,
         BuildableCategory = {
             'BUILTBYCOMMANDER UEF',

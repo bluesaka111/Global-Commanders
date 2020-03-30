@@ -701,11 +701,8 @@ GRL0001 = Class(CWalkingLandUnit) {
 			self:RequestRefreshUI()
 			self.UnitComplete = true
 			self.Army = self:GetArmy()
-			self.HitsTaken = 0
-			self.DmgTotal = 0
-			self.Side = 0
-			self.Drone1 = nil
-			self.Drone2 = nil
+			self.DroneA = nil
+			self.DroneB = nil
       	end
     end,
 
@@ -723,11 +720,11 @@ GRL0001 = Class(CWalkingLandUnit) {
     	WaitSeconds(1)
     	if not self:IsDead() then 
             local myOrientation = self:GetOrientation()      
-            if self.Drone1 == nil or self.Drone1:IsDead() then
+            if self.DroneA == nil or self.DroneA:IsDead() then
             	local location = self:GetPosition('AttachSpecial01')
             	local drone = CreateUnit('GRA0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
-				self.Drone1 = drone
-				drone:SetParent(self, 'GRL0001')
+				self.DroneA = drone
+				drone:SetParent(self, 'DroneA')
             	drone:SetCreator(self)
 				IssueClearCommands({drone})
             	IssueGuard({drone}, self)
@@ -735,11 +732,11 @@ GRL0001 = Class(CWalkingLandUnit) {
 				self.Trash:Add(drone)
 				WaitSeconds(0.3)
 			end
-            if self.Drone2 == nil or self.Drone2:IsDead() then
+            if self.DroneB == nil or self.DroneB:IsDead() then
             	local location = self:GetPosition('AttachSpecial02')
 				local drone = CreateUnit('GRA0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
-				self.Drone2 = drone
-				drone:SetParent(self, 'GRL0001')
+				self.DroneB = drone
+				drone:SetParent(self, 'DroneB')
             	drone:SetCreator(self)
 				IssueClearCommands({drone})
             	IssueGuard({drone}, self)
@@ -758,17 +755,13 @@ GRL0001 = Class(CWalkingLandUnit) {
 
     OnDamage = function(self, instigator, amount, vector, damagetype) 
     	CWalkingLandUnit.OnDamage(self, instigator, amount, vector, damagetype) 
-		if self.Drone1 != nil then
-			for k, v in self.DroneTable do 
-				IssueClearCommands({self.Drone1})
-				IssueAttack({self.Drone1}, instigator)
-			end 
+		if self.DroneA != nil then
+			IssueClearCommands({self.Drone1})
+			IssueAttack({self.Drone1}, instigator)
 		end
-		if self.Drone2 != nil then
-			for k, v in self.DroneTable do 
-				IssueClearCommands({self.Drone2})
-				IssueAttack({self.Drone2}, instigator)
-			end 
+		if self.DroneB != nil then
+			IssueClearCommands({self.Drone2})
+			IssueAttack({self.Drone2}, instigator)
 		end 
     end,
     
