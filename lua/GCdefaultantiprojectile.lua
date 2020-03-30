@@ -8,7 +8,7 @@
 #**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 local Entity = import('/lua/sim/Entity.lua').Entity
-local GCEffectTemplate = import('/mods/Global Commanders/lua/GCEffectTemplates.lua')
+local GCEffectTemplate = import('/mods/Global Commanders Enhanced/lua/GCEffectTemplates.lua')
 
 TorpedoRedirect = Class(Entity) {
 
@@ -113,7 +113,7 @@ TorpedoRedirect = Class(Entity) {
 
 LambdaFieldRedirector = Class(Entity) {
 
-    RedirectBeams = {'/mods/Global Commanders/effects/emitters/invisible_cannon_beam_01_emit.bp',},
+    RedirectBeams = {'/mods/Global Commanders Enhanced/effects/emitters/invisible_cannon_beam_01_emit.bp',},
     EndPointEffects = {'/effects/emitters/particle_cannon_end_01_emit.bp',},
     LambdaEffects = GCEffectTemplate.LambdaRedirector, 
 
@@ -222,7 +222,7 @@ LambdaFieldRedirector = Class(Entity) {
 
 LambdaFieldDestroyer = Class(Entity) {
 
-    RedirectBeams = {'/mods/Global Commanders/effects/emitters/invisible_cannon_beam_02_emit.bp'},
+    RedirectBeams = {'/mods/Global Commanders Enhanced/effects/emitters/invisible_cannon_beam_02_emit.bp'},
     EndPointEffects = {'/effects/emitters/particle_cannon_end_01_emit.bp',},
 	LambdaEffects = GCEffectTemplate.LambdaDestoyer,
 

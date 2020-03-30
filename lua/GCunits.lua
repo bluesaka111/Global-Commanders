@@ -2,7 +2,7 @@ local DefaultUnitsFile = import('/lua/defaultunits.lua')
 local StructureUnit = DefaultUnitsFile.StructureUnit
 
 local EffectTemplate = import('/lua/EffectTemplates.lua')
-local Toolbox = import('/mods/Global Commanders/lua/CommonTools.lua')
+local Toolbox = import('/mods/Global Commanders Enhanced/lua/CommonTools.lua')
 
 QuantumTeleporterUnit = Class(StructureUnit) {
 
@@ -44,15 +44,15 @@ QuantumTeleporterUnit = Class(StructureUnit) {
 			Scale = 8,
 			Offset = { x = 0, y = 0, z = 0 },
 			Emitters = {
-				'/mods/Global Commanders/effects/emitters/teleport_explode_effect_01_emit.bp',
-				'/mods/Global Commanders/effects/emitters/teleport_explode_effect_02_emit.bp',
+				'/mods/Global Commanders Enhanced/effects/emitters/teleport_explode_effect_01_emit.bp',
+				'/mods/Global Commanders Enhanced/effects/emitters/teleport_explode_effect_02_emit.bp',
 			},
 		},
 		{
 			Scale = 4,
 			Offset = { x = 0, y = 0, z = 0 },
 			Emitters = {
-				'/mods/Global Commanders/effects/emitters/teleport_explode_effect_03_emit.bp',
+				'/mods/Global Commanders Enhanced/effects/emitters/teleport_explode_effect_03_emit.bp',
 			},
 		},
 	},
@@ -68,17 +68,17 @@ QuantumTeleporterUnit = Class(StructureUnit) {
 			Scale = 3,
 			Offset = { x = 0, y = 1.5, z = 0 },
 			Emitters = {
-				'/mods/Global Commanders/effects/emitters/teleport_charge_effect_01_emit.bp',
-				'/mods/Global Commanders/effects/emitters/teleport_charge_effect_02_emit.bp',
-				'/mods/Global Commanders/effects/emitters/teleport_charge_effect_01_emit.bp',
+				'/mods/Global Commanders Enhanced/effects/emitters/teleport_charge_effect_01_emit.bp',
+				'/mods/Global Commanders Enhanced/effects/emitters/teleport_charge_effect_02_emit.bp',
+				'/mods/Global Commanders Enhanced/effects/emitters/teleport_charge_effect_01_emit.bp',
 			},
 		},
 		{
 			Scale = 6,
 			Offset = { x = 0, y = 2.5, z = -6 },
 			Emitters = {
-				'/mods/Global Commanders/effects/emitters/teleport_charge_effect_04_emit.bp',
-				'/mods/Global Commanders/effects/emitters/teleport_charge_effect_05_emit.bp',
+				'/mods/Global Commanders Enhanced/effects/emitters/teleport_charge_effect_04_emit.bp',
+				'/mods/Global Commanders Enhanced/effects/emitters/teleport_charge_effect_05_emit.bp',
 			},
 		},
 	},

@@ -1,4 +1,4 @@
-local TDFPlasmaGunProjectile = import('/mods/Global Commanders/lua/GCprojectiles.lua').TDFPlasmaGunProjectile
+local TDFPlasmaGunProjectile = import('/mods/Global Commanders Enhanced/lua/GCprojectiles.lua').TDFPlasmaGunProjectile
 
 TDFPlasmaGun = Class(TDFPlasmaGunProjectile) {}
 

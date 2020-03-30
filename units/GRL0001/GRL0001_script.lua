@@ -14,7 +14,7 @@ local CAAMissileNaniteWeapon = CWeapons.CAAMissileNaniteWeapon
 local CCannonMolecularWeapon = CWeapons.CCannonMolecularWeapon
 local CIFCommanderDeathWeapon = CWeapons.CIFCommanderDeathWeapon
 local CDFHeavyMicrowaveLaserGeneratorCom = CWeapons.CDFHeavyMicrowaveLaserGeneratorCom
-local BlueLaserGenerator = import('/mods/Global Commanders/lua/GCweapons.lua').BlueLaserGenerator
+local BlueLaserGenerator = import('/mods/Global Commanders Enhanced/lua/GCweapons.lua').BlueLaserGenerator
 local CANTorpedoLauncherWeapon = CWeapons.CANTorpedoLauncherWeapon
 local CIFArtilleryWeapon = CWeapons.CIFArtilleryWeapon
 local CDFHvyProtonCannonWeapon = CWeapons.CDFHvyProtonCannonWeapon
@@ -27,7 +27,7 @@ local Entity = import('/lua/sim/Entity.lua').Entity
 local EffectUtil = import('/lua/EffectUtilities.lua')
 local Buff = import('/lua/sim/Buff.lua')
 
-local RemoteIntel = import('/mods/Global Commanders/lua/RemoteIntel.lua').RemoteIntel
+local RemoteIntel = import('/mods/Global Commanders Enhanced/lua/RemoteIntel.lua').RemoteIntel
 CWalkingLandUnit = RemoteIntel( CWalkingLandUnit )
 
 GRL0001 = Class(CWalkingLandUnit) {
@@ -436,7 +436,7 @@ GRL0001 = Class(CWalkingLandUnit) {
                                 
                 Warp(self, destination, self:GetOrientation())
                 
-                self:CreateProjectile( '/mods/Global Commanders/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
+                self:CreateProjectile( '/mods/Global Commanders Enhanced/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
 
                 WaitSeconds(.3) --wait at destination
                 self:GetNavigator():AbortMove()
@@ -710,17 +710,12 @@ GRL0001 = Class(CWalkingLandUnit) {
     end,
 
     InitialDroneSpawn = function(self)
-    	local numcreate = 2
-
-    	self.Side = 1
     	WaitSeconds(2)
     	if not self:IsDead() then
-            for i = 0, (numcreate -1) do
-            	if not self:IsDead() then 
-                    self:ForkThread(self.SpawnDrone) 
-                    WaitSeconds(1)
-            	end
-            end
+			if not self:IsDead() then 
+				self:ForkThread(self.SpawnDrone) 
+				WaitSeconds(1)
+			end
     	end
     end,
 
@@ -728,20 +723,21 @@ GRL0001 = Class(CWalkingLandUnit) {
     	WaitSeconds(1)
     	if not self:IsDead() then 
             local myOrientation = self:GetOrientation()      
-            if self.Side == 1 then
+            if self.Drone1 == nil or self.Drone1:IsDead() then
             	local location = self:GetPosition('AttachSpecial01')
-            	local drone = CreateUnitHPR('GRA0002', self:GetArmy(), location[1], location[2], location[3], 0, 0, 0) 
+            	local drone = CreateUnit('GRA0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 				self.Drone1 = drone
 				drone:SetParent(self, 'GRL0001')
             	drone:SetCreator(self)
 				IssueClearCommands({drone})
             	IssueGuard({drone}, self)
                 drone:PlayTeleportOutEffects()
-				self.Side = 2
 				self.Trash:Add(drone)
-            elseif self.Side == 2 then
+				WaitSeconds(0.3)
+			end
+            if self.Drone2 == nil or self.Drone2:IsDead() then
             	local location = self:GetPosition('AttachSpecial02')
-				local drone = CreateUnitHPR('GRA0002', self:GetArmy(), location[1], location[2], location[3], 0, 0, 0)  
+				local drone = CreateUnit('GRA0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
 				self.Drone2 = drone
 				drone:SetParent(self, 'GRL0001')
             	drone:SetCreator(self)
@@ -749,6 +745,7 @@ GRL0001 = Class(CWalkingLandUnit) {
             	IssueGuard({drone}, self)
                 drone:PlayTeleportOutEffects()
 				self.Trash:Add(drone)
+				WaitSeconds(0.3)
             end
     	end
     end,

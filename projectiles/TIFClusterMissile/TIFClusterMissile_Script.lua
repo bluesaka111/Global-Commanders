@@ -70,7 +70,7 @@ TIFClusterMissile = Class(TMissileCruiseProjectile) {
             --KillThread(self.MoveThread)         
 
 			local FxFragEffect = EffectTemplate.SThunderStormCannonProjectileSplitFx 
-			local ChildProjectileBP = '/mods/Global Commanders/projectiles/TIFClusterMissileChild/TIFClusterMissileChild_proj.bp'  
+			local ChildProjectileBP = '/mods/Global Commanders Enhanced/projectiles/TIFClusterMissileChild/TIFClusterMissileChild_proj.bp'  
               
 			### Split effects
 			for k, v in FxFragEffect do

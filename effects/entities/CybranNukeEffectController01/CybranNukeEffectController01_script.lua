@@ -4,8 +4,8 @@ local RandomInt = import('/lua/utilities.lua').GetRandomInt
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local Util = import('/lua/utilities.lua')
 
-local CybranNukeEffect04 = '/mods/Global Commanders/projectiles/CybranPlasmaBall01/CybranPlasmaBall01_proj.bp' 
-local CybranNukeEffect05 = '/mods/Global Commanders/effects/Entities/CybranNukeEffect05/CybranNukeEffect05_proj.bp'
+local CybranNukeEffect04 = '/mods/Global Commanders Enhanced/projectiles/CybranPlasmaBall01/CybranPlasmaBall01_proj.bp' 
+local CybranNukeEffect05 = '/mods/Global Commanders Enhanced/effects/Entities/CybranNukeEffect05/CybranNukeEffect05_proj.bp'
 
 
 CybranNukeEffectController01 = Class(NullShell) {
@@ -139,7 +139,7 @@ CybranNukeEffectController01 = Class(NullShell) {
 		
         # Create initial fireball dome effect
         local FireballDomeYOffset = -20
-        self:CreateProjectile('/mods/Global Commanders/effects/entities/CybranNukeEffect01/CybranNukeEffect01_proj.bp',0,FireballDomeYOffset,0,0,0,1)
+        self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/CybranNukeEffect01/CybranNukeEffect01_proj.bp',0,FireballDomeYOffset,0,0,0,1)
         
 		
         ###self:ShakeCamera( radius, maxShakeEpicenter, minShakeAtRadius, interval )
@@ -287,7 +287,7 @@ CybranNukeEffectController01 = Class(NullShell) {
         for i = 0, (sides-1) do
             local x = math.sin(i*angle) * OffsetMod
             local z = math.cos(i*angle) * OffsetMod
-            local proj = self:CreateProjectile('/mods/Global Commanders/effects/entities/CybranNukeEffect03/CybranNukeEffect03_proj.bp', x, HeightOffset, z, x, 0, z)
+            local proj = self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/CybranNukeEffect03/CybranNukeEffect03_proj.bp', x, HeightOffset, z, x, 0, z)
                 :SetVelocity(velocity)
             table.insert(projectiles, proj)
         end   

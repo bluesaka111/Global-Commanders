@@ -8,8 +8,8 @@ EmitterBlueprint {
 	SortOrder = 1.00,
 	LowFidelity = false,
 	Texture = [[/textures/particles/miasma_mod_02.dds]],
-	RampTexture = [[/mods/Global Commanders/textures/particles/ra_0124_fire.dds]],
-	DistortionMapTexture = [[/mods/Global Commanders/textures/particles/di_0005_55.dds]],
+	RampTexture = [[/mods/Global Commanders Enhanced/textures/particles/ra_0124_fire.dds]],
+	DistortionMapTexture = [[/mods/Global Commanders Enhanced/textures/particles/di_0005_55.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

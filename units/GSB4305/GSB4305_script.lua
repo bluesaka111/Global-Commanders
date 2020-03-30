@@ -1,4 +1,4 @@
-local QuantumTeleporterUnit = import('/mods/Global Commanders/lua/GCunits.lua').QuantumTeleporterUnit
+local QuantumTeleporterUnit = import('/mods/Global Commanders Enhanced/lua/GCunits.lua').QuantumTeleporterUnit
 
 GSB4305 = Class(QuantumTeleporterUnit) {}
 

@@ -40,7 +40,7 @@ do
 
 			LOG('Faction ',faction)
 			if faction == 1 then
-				unit:SetMesh('/mods/Global Commanders/units/GEL0001/GEL0001_PhaseShield_mesh', true)
+				unit:SetMesh('/mods/Global Commanders Enhanced/units/GEL0001/GEL0001_PhaseShield_mesh', true)
 				unit:ShowBone(0, true)
 				unit:HideBone('Back_Upgrade_B01', true) 
 				unit:HideBone('Megacannon01', true)
@@ -58,7 +58,7 @@ do
 				unit:HideBone('Cape', true)
 				unit:HideBone('Torpedo_Launcher', true)
 			elseif faction == 2 then
-				unit:SetMesh('/mods/Global Commanders/units/GAL0001/GAL0001_PhaseShield_mesh', true)
+				unit:SetMesh('/mods/Global Commanders Enhanced/units/GAL0001/GAL0001_PhaseShield_mesh', true)
 				unit:ShowBone(0, true)
 				unit:HideBone('Back_Upgrade', true)
 				unit:HideBone('Right_Rotator', true)        
@@ -76,7 +76,7 @@ do
 				unit:HideBone('Laser_Cannon', true)
 				unit:HideBone('Missile_Rack', true)
 			elseif faction == 3 then
-				unit:SetMesh('/mods/Global Commanders/units/GRL0001/GRL0001_PhaseShield_mesh', true)
+				unit:SetMesh('/mods/Global Commanders Enhanced/units/GRL0001/GRL0001_PhaseShield_mesh', true)
 				unit:ShowBone(0, true)
 				unit:HideBone('Back_Upgrade', true)
 				unit:HideBone('Left_Range_Upgrade', true)

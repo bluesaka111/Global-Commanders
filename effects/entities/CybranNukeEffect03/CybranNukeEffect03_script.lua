@@ -9,7 +9,7 @@
 #****************************************************************************
 
 local NullShell = import('/lua/sim/defaultprojectiles.lua').NullShell
-local GCEffectTemplate = import('/mods/Global Commanders/lua/GCEffectTemplates.lua')
+local GCEffectTemplate = import('/mods/Global Commanders Enhanced/lua/GCEffectTemplates.lua')
 
 UEFNukeEffect03 = Class(NullShell) {
     

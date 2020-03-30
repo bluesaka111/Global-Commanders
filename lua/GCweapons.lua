@@ -3,8 +3,8 @@ local DefaultProjectileWeapon = WeaponFile.DefaultProjectileWeapon
 local DefaultBeamWeapon = WeaponFile.DefaultBeamWeapon
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 
-local GCEffectTemplate = import('/mods/Global Commanders/lua/GCEffectTemplates.lua')
-local GCCollisionBeamFile = import('/mods/Global Commanders/lua/GCdefaultcollisionbeams.lua')
+local GCEffectTemplate = import('/mods/Global Commanders Enhanced/lua/GCEffectTemplates.lua')
+local GCCollisionBeamFile = import('/mods/Global Commanders Enhanced/lua/GCdefaultcollisionbeams.lua')
 
 ADFCannonOblivionWeapon = Class(DefaultProjectileWeapon) {
     FxMuzzleFlash = {

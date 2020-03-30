@@ -17,7 +17,7 @@ local MultiCompositeEmitterProjectile = DefaultProjectileFile.MultiCompositeEmit
 local NullShell = DefaultProjectileFile.NullShell
 local MultiBeamProjectile = DefaultProjectileFile.MultiBeamProjectile
 
-local GCEffectTemplate = import('/mods/Global Commanders/lua/GCEffectTemplates.lua')
+local GCEffectTemplate = import('/mods/Global Commanders Enhanced/lua/GCEffectTemplates.lua')
 
 AOblivionCannonProjectile = Class(MultiPolyTrailProjectile) {
     FxImpactTrajectoryAligned = false,
@@ -93,7 +93,7 @@ AQuantumCannonProjectile = Class(SinglePolyTrailProjectile) {
 ADFSuperCannonProjectile = Class(MultiPolyTrailProjectile) {
 
     PolyTrails = {
-	'/mods/Global Commanders/effects/emitters/AeonSuperCannon_polytrails_emit.bp',
+	'/mods/Global Commanders Enhanced/effects/emitters/AeonSuperCannon_polytrails_emit.bp',
     },
     PolyTrailScale = 5,
     FxImpactUnit = GCEffectTemplate.ASuperCannonHit01,
@@ -133,7 +133,7 @@ AQuantumWarheadProjectile = Class(MultiCompositeEmitterProjectile) {
         for i = 0, (blanketSides-1) do
             local blanketX = math.sin(i*blanketAngle)
             local blanketZ = math.cos(i*blanketAngle)
-            self:CreateProjectile('/mods/Global Commanders/effects/entities/EMPEffect01/EMPEffect01_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
+            self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/EMPEffect01/EMPEffect01_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
                 :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
         end
 
@@ -161,7 +161,7 @@ CDFStunProjectile = Class(NullShell) {
         for i = 0, (blanketSides-1) do
             local blanketX = math.sin(i*blanketAngle)
             local blanketZ = math.cos(i*blanketAngle)
-            self:CreateProjectile('/mods/Global Commanders/effects/entities/EMPEffect02/EMPEffect02_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
+            self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/EMPEffect02/EMPEffect02_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
                 :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
         end
 
@@ -241,7 +241,7 @@ THgausCannon = Class(MultiPolyTrailProjectile) {
 }
 
 TDFPlasmaGunProjectile = Class(EmitterProjectile) {
-    FxTrails = {'/mods/Global Commanders/Effects/Emitters/PlasmaTrailFX.bp',},
+    FxTrails = {'/mods/Global Commanders Enhanced/Effects/Emitters/PlasmaTrailFX.bp',},
     FxTrailScale = 0.5,  
   
     FxImpactTrajectoryAligned = false,
@@ -265,7 +265,7 @@ CybranPlasmaBallProjectile = Class(EmitterProjectile) {
     FxImpactLand = {},
     FxImpactUnderWater = {},
 
-    ChildProjectile = '/mods/Global Commanders/projectiles/CybranPlasmaBallChild01/CybranPlasmaBallChild01_proj.bp',
+    ChildProjectile = '/mods/Global Commanders Enhanced/projectiles/CybranPlasmaBallChild01/CybranPlasmaBallChild01_proj.bp',
 
     OnCreate = function(self)
         EmitterProjectile.OnCreate(self)

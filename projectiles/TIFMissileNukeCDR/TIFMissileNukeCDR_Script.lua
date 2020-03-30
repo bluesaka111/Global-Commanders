@@ -23,7 +23,7 @@ TIFMissileNukeCDR = Class(TIFMissileNuke) {
                 self:PlaySound(myBlueprint.Audio.Explosion)
             end
 
-	    nukeProjectile = self:CreateProjectile('/mods/Global Commanders/effects/Entities/BillyNukeEffectController01/BillyNukeEffectController01_proj.bp', 0, 0, 0, nil, nil, nil):SetCollision(false)
+	    nukeProjectile = self:CreateProjectile('/mods/Global Commanders Enhanced/effects/Entities/BillyNukeEffectController01/BillyNukeEffectController01_proj.bp', 0, 0, 0, nil, nil, nil):SetCollision(false)
             nukeProjectile:PassDamageData(self.DamageData)
             nukeProjectile:PassData(self.Data)
         end

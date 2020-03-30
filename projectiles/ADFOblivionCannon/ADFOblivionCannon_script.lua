@@ -1,4 +1,4 @@
-local AOblivionCannonProjectile = import('/mods/Global Commanders/lua/GCprojectiles.lua').AOblivionCannonProjectile
+local AOblivionCannonProjectile = import('/mods/Global Commanders Enhanced/lua/GCprojectiles.lua').AOblivionCannonProjectile
 
 ADFOblivionCannon = Class(AOblivionCannonProjectile) {}
 

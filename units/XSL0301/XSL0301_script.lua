@@ -25,7 +25,7 @@ local SANHeavyCavitationTorpedo = SWeapons.SANHeavyCavitationTorpedo
 
 local CDFLaserHeavyWeapon = import('/lua/cybranweapons.lua').CDFLaserHeavyWeapon
 
-local RemoteTracking = import('/mods/Global Commanders/lua/RemoteTracking.lua').RemoteTracking
+local RemoteTracking = import('/mods/Global Commanders Enhanced/lua/RemoteTracking.lua').RemoteTracking
 SWalkingLandUnit = RemoteTracking( SWalkingLandUnit )
 
 XSL0301 = Class(SWalkingLandUnit) {
@@ -171,7 +171,7 @@ XSL0301 = Class(SWalkingLandUnit) {
 								
 				Warp(self, destination, self:GetOrientation()) -- warp us there baby yeah!!!
 				
-				self:CreateProjectile( '/mods/Global Commanders/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
+				self:CreateProjectile( '/mods/Global Commanders Enhanced/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
 
 				WaitSeconds(.3) --wait at destination
 				self:GetNavigator():AbortMove()	--kill the current move order

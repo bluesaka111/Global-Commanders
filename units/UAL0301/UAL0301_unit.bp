@@ -146,7 +146,7 @@ UnitBlueprint {
             '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
         },
-	AlternateUpgradeIconPath = '/mods/Global Commanders/textures/ui/common/game/aeon-enhancements/',
+	AlternateUpgradeIconPath = '/mods/Global Commanders Enhanced/textures/ui/common/game/aeon-enhancements/',
         AnimationWalk = '/units/UAL0301/UAL0301_AWalk01.sca',
         AnimationWalkRate = 3.5,
         IdleEffects = {
@@ -350,7 +350,7 @@ UnitBlueprint {
             ImpactEffects = 'AeonShieldHit01',
             MaintenanceConsumptionPerSecondEnergy = 300,
             Name = '<LOC enhancements_0028>Personal Shield Generator',
-            OwnerShieldMesh = '/mods/Global Commanders/units/ual0301/ual0301_personalshield_mesh',
+            OwnerShieldMesh = '/mods/Global Commanders Enhanced/units/ual0301/ual0301_personalshield_mesh',
             RegenAssistMult = 10,
             ShieldEnergyDrainRechargeTime = 5,
             ShieldMaxHealth = 40000,
@@ -376,7 +376,7 @@ UnitBlueprint {
             ImpactEffects = 'AeonShieldHit01',
             MaintenanceConsumptionPerSecondEnergy = 600,
             Name = '<LOC enhancements_0029>Heavy Personal Shield Generator',
-            OwnerShieldMesh = '/mods/Global Commanders/units/ual0301/ual0301_personalshield_mesh',
+            OwnerShieldMesh = '/mods/Global Commanders Enhanced/units/ual0301/ual0301_personalshield_mesh',
             Prerequisite = 'Shield',
             ShieldEnergyDrainRechargeTime = 5,
             ShieldMaxHealth = 70000,
@@ -793,7 +793,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/Global Commanders/projectiles/ADFOblivionCannon/ADFOblivionCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/ADFOblivionCannon/ADFOblivionCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -871,7 +871,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 45,
-            ProjectileId = '/mods/Global Commanders/projectiles/ADFOblivionCannon/ADFOblivionCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/ADFOblivionCannon/ADFOblivionCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1192,7 +1192,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 15,
-            ProjectileId = '/mods/Global Commanders/projectiles/AIFTacticalMissile/AIFTacticalMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/AIFTacticalMissile/AIFTacticalMissile_proj.bp',
             ProjectileLifetime = 50,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1256,7 +1256,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 15,
-            ProjectileId = '/mods/Global Commanders/projectiles/AIFTacticalMissile/AIFTacticalMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/AIFTacticalMissile/AIFTacticalMissile_proj.bp',
             ProjectileLifetime = 50,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1320,7 +1320,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 50,
-            ProjectileId = '/mods/Global Commanders/projectiles/ADFQuantumCannon/ADFQuantumCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/ADFQuantumCannon/ADFQuantumCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             RackBones = {
                 {
@@ -1392,7 +1392,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 50,
-            ProjectileId = '/mods/Global Commanders/projectiles/ADFQuantumCannon/ADFQuantumCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/ADFQuantumCannon/ADFQuantumCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             RackBones = {
                 {

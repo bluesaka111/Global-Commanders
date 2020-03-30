@@ -28,7 +28,7 @@ local BuildMode = import('/lua/ui/game/buildmode.lua')
 local UnitViewDetail = import('/lua/ui/game/unitviewDetail.lua')
 
 local OLDConstruct = import('/lua/ui/game/construction.lua')
-local LOGICConstruction = import('/mods/Global Commanders/hook/lua/ui/game/construction.lua')
+local LOGICConstruction = import('/mods/Global Commanders Enhanced/hook/lua/ui/game/construction.lua')
 
 #LOG(OLDConstruct.CommonLogic())
 #LOG(LOGICConstruction.CommonLogic())

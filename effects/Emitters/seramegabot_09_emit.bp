@@ -23,7 +23,7 @@ EmitterBlueprint {
 	LowFidelity = true,
 	MedFidelity = true,
 	HighFidelity = true,
-	Texture = [[/mods/Global Commanders/textures/particles/seramegabotflames.dds]],
+	Texture = [[/mods/Global Commanders Enhanced/textures/particles/seramegabotflames.dds]],
 	RampTexture = [[/textures/particles/ramp_fire_12.dds]],
 	XDirectionCurve = {
 		XRange = 10.00,

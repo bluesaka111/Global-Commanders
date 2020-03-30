@@ -97,7 +97,7 @@ UnitBlueprint {
         RegenRate = 100,
         Shield = {
             ImpactEffects = 'SeraphimShieldHit01',
-            OwnerShieldMesh = '/mods/Global Commanders/units/GSA0002/GSA0002_personalshield_mesh',
+            OwnerShieldMesh = '/mods/Global Commanders Enhanced/units/GSA0002/GSA0002_personalshield_mesh',
             ShieldEnergyDrainRechargeTime = 2,
             ShieldMaxHealth = 9000,
             ShieldRechargeTime = 32,
@@ -261,7 +261,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 68,
             NotExclusive = true,
-            ProjectileId = '/mods/Global Commanders/projectiles/SDFPhasonBall/SDFPhasonBall_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SDFPhasonBall/SDFPhasonBall_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {

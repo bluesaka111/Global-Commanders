@@ -4,7 +4,7 @@
 ###
 ############
 
-local GCEffectTemplate = import('/mods/Global Commanders/lua/GCEffectTemplates.lua')
+local GCEffectTemplate = import('/mods/Global Commanders Enhanced/lua/GCEffectTemplates.lua')
 
 EMPEffect02 = Class(import('/lua/sim/defaultprojectiles.lua').EmitterProjectile) {
     FxTrails = GCEffectTemplate.EMPEffect01,

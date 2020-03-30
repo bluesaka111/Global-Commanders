@@ -1,4 +1,4 @@
-local SIFBoomProjectile = import('/mods/Global Commanders/lua/GCprojectiles.lua').SIFBoomProjectile
+local SIFBoomProjectile = import('/mods/Global Commanders Enhanced/lua/GCprojectiles.lua').SIFBoomProjectile
 
 SIFBoomShell = Class(SIFBoomProjectile) {}
 

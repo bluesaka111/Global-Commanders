@@ -105,11 +105,11 @@ BillyNukeEffectController01 = Class(NullShell) {
 
         # Create initial fireball dome effect
         local FireballDomeYOffset = -2.5
-        self:CreateProjectile('/mods/Global Commanders/effects/entities/BillyNukeEffect01/BillyNukeEffect01_proj.bp',0,FireballDomeYOffset,0,0,0,1)
+        self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/BillyNukeEffect01/BillyNukeEffect01_proj.bp',0,FireballDomeYOffset,0,0,0,1)
         
         # Create projectile that controls plume effects
         local PlumeEffectYOffset = 0.55
-        self:CreateProjectile('/mods/Global Commanders/effects/entities/BillyNukeEffect02/BillyNukeEffect02_proj.bp',0,PlumeEffectYOffset,0,0,0,1)        
+        self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/BillyNukeEffect02/BillyNukeEffect02_proj.bp',0,PlumeEffectYOffset,0,0,0,1)        
         
         
         for k, v in EffectTemplate.TNukeRings01 do
@@ -141,7 +141,7 @@ BillyNukeEffectController01 = Class(NullShell) {
         for i = 0, (sides-1) do
             local X = math.sin(i*angle)
             local Z = math.cos(i*angle)
-            self:CreateProjectile('/mods/Global Commanders/effects/entities/BillyNukeShockwave01/BillyNukeShockwave01_proj.bp', X * OffsetMod , 1.5, Z * OffsetMod, X, 0, Z)
+            self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/BillyNukeShockwave01/BillyNukeShockwave01_proj.bp', X * OffsetMod , 1.5, Z * OffsetMod, X, 0, Z)
                 :SetVelocity(velocity):SetAcceleration(-0.5)
         end   
     end,  
@@ -156,7 +156,7 @@ BillyNukeEffectController01 = Class(NullShell) {
         for i = 0, (sides-1) do
             local X = math.sin(i*angle)
             local Z = math.cos(i*angle)
-            local proj =  self:CreateProjectile('/mods/Global Commanders/effects/entities/BillyNukeShockwave02/BillyNukeShockwave02_proj.bp', X * OffsetMod , 2.5, Z * OffsetMod, X, 0, Z)
+            local proj =  self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/BillyNukeShockwave02/BillyNukeShockwave02_proj.bp', X * OffsetMod , 2.5, Z * OffsetMod, X, 0, Z)
                 :SetVelocity(velocity)
             table.insert( projectiles, proj )
         end  
@@ -192,7 +192,7 @@ BillyNukeEffectController01 = Class(NullShell) {
             yVec = RandomFloat(0.2, 1)
             zVec = math.cos(angleInitial + (i*angle) + RandomFloat(-angleVariation, angleVariation)) 
             velocity = 3.4 + (yVec * RandomFloat(2,5))
-            table.insert(projectiles, self:CreateProjectile('/mods/Global Commanders/effects/entities/BillyNukeFlavorPlume01/BillyNukeFlavorPlume01_proj.bp', 0, 0, 0, xVec, yVec, zVec):SetVelocity(velocity) )
+            table.insert(projectiles, self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/BillyNukeFlavorPlume01/BillyNukeFlavorPlume01_proj.bp', 0, 0, 0, xVec, yVec, zVec):SetVelocity(velocity) )
         end
 
         WaitSeconds( 3 )
@@ -214,7 +214,7 @@ BillyNukeEffectController01 = Class(NullShell) {
         for i = 0, (sides-1) do
             local x = math.sin(i*angle) * OffsetMod
             local z = math.cos(i*angle) * OffsetMod
-            local proj = self:CreateProjectile('/mods/Global Commanders/effects/entities/BillyNukeEffect03/BillyNukeEffect03_proj.bp', x, HeightOffset, z, x, 0, z)
+            local proj = self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/BillyNukeEffect03/BillyNukeEffect03_proj.bp', x, HeightOffset, z, x, 0, z)
                 :SetVelocity(velocity)
             table.insert(projectiles, proj)
         end   
@@ -255,7 +255,7 @@ BillyNukeEffectController01 = Class(NullShell) {
         local x = math.sin(i*angle+RandomFloat(-angle/2, angle/4)) * magnitude
         local z = math.cos(i*angle+RandomFloat(-angle/2, angle/4)) * magnitude
         local velocity = RandomFloat( 1, 3 ) * 1.5
-        self:CreateProjectile('/mods/Global Commanders/effects/entities/BillyNukeEffect05/BillyNukeEffect05_proj.bp', x, RandomFloat(outer_lower_height, outer_upper_height), z, x, 0, z)
+        self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/BillyNukeEffect05/BillyNukeEffect05_proj.bp', x, RandomFloat(outer_lower_height, outer_upper_height), z, x, 0, z)
             :SetVelocity(x * velocity, 0, z * velocity)
     end 
     end,

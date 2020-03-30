@@ -170,8 +170,8 @@ UnitBlueprint {
             '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
         },
-	AlternateUpgradeIconPath = '/mods/Global Commanders/textures/ui/common/game/uef-enhancements/',
-        AnimationSitDown = '/mods/Global Commanders/units/gel0001/gel0001_Asitdown.sca',
+	AlternateUpgradeIconPath = '/mods/Global Commanders Enhanced/textures/ui/common/game/uef-enhancements/',
+        AnimationSitDown = '/mods/Global Commanders Enhanced/units/gel0001/gel0001_Asitdown.sca',
         AnimationWalk = '/units/uel0001/uel0001_a001.sca',
         AnimationWalkRate = 1.7,
         AttackReticleSize = 55,
@@ -408,7 +408,7 @@ UnitBlueprint {
             Name = '<LOC enhancements_0063>Heavy Plasma Refractor',
             LeftZephyrNewDamageRadius = 2.5,
             RightZephyrNewDamageRadius = 2.5,
-            NewProjectileBlueprint = '/mods/Global Commanders/projectiles/TDFAdvancedIonizedPlasmaCannon/TDFAdvancedIonizedPlasmaCannon_proj.bp',
+            NewProjectileBlueprint = '/mods/Global Commanders Enhanced/projectiles/TDFAdvancedIonizedPlasmaCannon/TDFAdvancedIonizedPlasmaCannon_proj.bp',
             Prerequisite = 'PowerUp',
             Slot = 'RCH',
             UpgradeEffectBones = {
@@ -1454,7 +1454,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 60,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFHeavyIonizedPlasmaCannon/TDFHeavyIonizedPlasmaCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFHeavyIonizedPlasmaCannon/TDFHeavyIonizedPlasmaCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
                 {
@@ -1524,7 +1524,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 60,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFHeavyIonizedPlasmaCannon/TDFHeavyIonizedPlasmaCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFHeavyIonizedPlasmaCannon/TDFHeavyIonizedPlasmaCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             RackBones = {
                 {
@@ -1592,7 +1592,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-	    ProjectileId = '/mods/Global Commanders/projectiles/TIFHeavyShell/TIFHeavyShell_proj.bp',
+	    ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TIFHeavyShell/TIFHeavyShell_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -1667,7 +1667,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-	    ProjectileId = '/mods/Global Commanders/projectiles/TIFHeavyShell/TIFHeavyShell_proj.bp',
+	    ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TIFHeavyShell/TIFHeavyShell_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
@@ -1745,7 +1745,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 60,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFBigGaussCannon/TDFBigGaussCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFBigGaussCannon/TDFBigGaussCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             RackBones = {
                 {
@@ -1822,7 +1822,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 2,
             MuzzleVelocity = 60,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFBigGaussCannon/TDFBigGaussCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFBigGaussCannon/TDFBigGaussCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             RackBones = {
                 {
@@ -1899,7 +1899,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 60,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFBigGaussCannon/TDFBigGaussCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFBigGaussCannon/TDFBigGaussCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             RackBones = {
                 {
@@ -1971,7 +1971,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 2,
             MuzzleVelocity = 60,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFBigGaussCannon/TDFBigGaussCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFBigGaussCannon/TDFBigGaussCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             RackBones = {
                 {
@@ -2043,7 +2043,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.1,
             MuzzleSalvoSize = 6,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/Global Commanders/projectiles/TAAFlayerMissile/TAAFlayerMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TAAFlayerMissile/TAAFlayerMissile_proj.bp',
             ProjectileLifetime = 6,
             ProjectilesPerOnFire = 6,
             RackBones = {
@@ -2126,7 +2126,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.1,
             MuzzleSalvoSize = 6,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/Global Commanders/projectiles/TAAFlayerMissile/TAAFlayerMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TAAFlayerMissile/TAAFlayerMissile_proj.bp',
             ProjectileLifetime = 6,
             ProjectilesPerOnFire = 6,
             RackBones = {
@@ -2209,7 +2209,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.15,
             MuzzleSalvoSize = 15,
             MuzzleVelocity = 90,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFHeavyGaussCannon/TDFHeavyGaussCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFHeavyGaussCannon/TDFHeavyGaussCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -2283,7 +2283,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.15,
             MuzzleSalvoSize = 15,
             MuzzleVelocity = 90,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFHeavyGaussCannon/TDFHeavyGaussCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFHeavyGaussCannon/TDFHeavyGaussCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -2372,7 +2372,7 @@ UnitBlueprint {
             NukeOuterRingTicks = 20,
             NukeOuterRingTotalTime = 0,
             NukeWeapon = true,
-            ProjectileId = '/mods/Global Commanders/projectiles/TIFMissileNukeCDR/TIFMissileNukeCDR_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TIFMissileNukeCDR/TIFMissileNukeCDR_proj.bp',
             ProjectileLifetime = 80,
             RackBones = {
                 {
@@ -2396,7 +2396,7 @@ UnitBlueprint {
             Turreted = false,
             WeaponCategory = 'Missile',
             WeaponRepackTimeout = 5,
-            WeaponUnpackAnimation = '/mods/Global Commanders/units/gel0001/gel0001_aopen.sca',
+            WeaponUnpackAnimation = '/mods/Global Commanders Enhanced/units/gel0001/gel0001_aopen.sca',
             WeaponUnpackAnimationRate = 1,
             WeaponUnpacks = true,
 	},
@@ -2429,7 +2429,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.3,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 5,
-            ProjectileId = '/mods/Global Commanders/projectiles/TANHeavyAnglerTorpedo/TANHeavyAnglerTorpedo_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TANHeavyAnglerTorpedo/TANHeavyAnglerTorpedo_proj.bp',
             ProjectileLifetime = 12,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -2508,7 +2508,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 6,
             MuzzleVelocity = 10,
             PrefersPrimaryWeaponTarget = false,
-            ProjectileId = '/mods/Global Commanders/projectiles/TIFClusterMissile/TIFClusterMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TIFClusterMissile/TIFClusterMissile_proj.bp',
             ProjectileLifetime = 30,
             RackBones = {
                 {
@@ -2574,7 +2574,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 10,
             NotExclusive = true,
-            ProjectileId = '/mods/Global Commanders/projectiles/TIFOrbitalBombardmentMissile/TIFOrbitalBombardmentMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TIFOrbitalBombardmentMissile/TIFOrbitalBombardmentMissile_proj.bp',
             ProjectilesPerOnFire = 1,
 	    ProjectileLifetime = 120,
             RackBones = {

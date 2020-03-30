@@ -9,7 +9,7 @@ EmitterBlueprint {
 	InterpolateEmission = false,
 	SortOrder = 1.00,
 	Texture = [[/textures/particles/glow_02.dds]],
-	RampTexture = [[/mods/Global Commanders/textures/particles/ra_0124_fire.dds]],
+	RampTexture = [[/mods/Global Commanders Enhanced/textures/particles/ra_0124_fire.dds]],
 	EmitRateCurve = {
 		XRange = 2.0000,
 		Keys = {

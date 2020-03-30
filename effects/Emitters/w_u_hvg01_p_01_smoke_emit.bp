@@ -9,9 +9,9 @@ EmitterBlueprint {
 	ParticleResistance = true,
 	SortOrder = -3.00,
 	LowFidelity = false,
-	Texture = [[/mods/Global Commanders/textures/particles/sm_0012_55.dds]],
+	Texture = [[/mods/Global Commanders Enhanced/textures/particles/sm_0012_55.dds]],
 	RampTexture = [[/textures/particles/ramp_brown_03.dds]],
-	DistortionMapTexture = [[/mods/Global Commanders/textures/particles/di_0009_55.dds]],
+	DistortionMapTexture = [[/mods/Global Commanders Enhanced/textures/particles/di_0009_55.dds]],
 	EmitRateCurve = {
 		XRange = 8.0000,
 		Keys = {

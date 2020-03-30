@@ -19,8 +19,8 @@ local AANChronoTorpedoWeapon = AWeapons.AANChronoTorpedoWeapon
 local ADFPhasonLaser = AWeapons.ADFPhasonLaser
 local AIFQuantumWarhead = AWeapons.AIFQuantumWarhead
 
-local ADFCannonOblivionWeapon = import('/mods/Global Commanders/lua/GCweapons.lua').ADFCannonOblivionWeapon
-local ADFCannonOblivionWeapon02 = import('/mods/Global Commanders/lua/GCweapons.lua').ADFCannonOblivionWeapon02
+local ADFCannonOblivionWeapon = import('/mods/Global Commanders Enhanced/lua/GCweapons.lua').ADFCannonOblivionWeapon
+local ADFCannonOblivionWeapon02 = import('/mods/Global Commanders Enhanced/lua/GCweapons.lua').ADFCannonOblivionWeapon02
 
 local target = 0
 local Buff = import('/lua/sim/Buff.lua')
@@ -28,7 +28,7 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 local EffectUtil = import('/lua/EffectUtilities.lua')
 local podteleport,podlocation
 
-local RemoteViewing = import('/mods/Global Commanders/lua/RemoteViewing.lua').RemoteViewing
+local RemoteViewing = import('/mods/Global Commanders Enhanced/lua/RemoteViewing.lua').RemoteViewing
 AWalkingLandUnit = RemoteViewing( AWalkingLandUnit ) 
 
 GAL0001 = Class(AWalkingLandUnit) {
@@ -266,7 +266,7 @@ GAL0001 = Class(AWalkingLandUnit) {
                                 
                 Warp(self, destination, self:GetOrientation())
                 
-                self:CreateProjectile( '/mods/Global Commanders/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
+                self:CreateProjectile( '/mods/Global Commanders Enhanced/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
 
                 WaitSeconds(.3) --wait at destination
                 self:GetNavigator():AbortMove()

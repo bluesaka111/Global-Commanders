@@ -1,4 +1,4 @@
-local THgausCannon = import('/mods/Global Commanders/lua/GCprojectiles.lua').THgausCannon
+local THgausCannon = import('/mods/Global Commanders Enhanced/lua/GCprojectiles.lua').THgausCannon
 
 TDFBigGaussCannon = Class(THgausCannon) {}
 

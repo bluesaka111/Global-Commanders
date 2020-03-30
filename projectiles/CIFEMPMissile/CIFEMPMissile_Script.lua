@@ -68,7 +68,7 @@ CIFEMPMissile = Class(CLOATacticalMissileProjectile) {
         for i = 0, (blanketSides-1) do
             local blanketX = math.sin(i*blanketAngle)
             local blanketZ = math.cos(i*blanketAngle)
-            self:CreateProjectile('/mods/Global Commanders/effects/entities/EMPEffect02/EMPEffect02_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
+            self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/EMPEffect02/EMPEffect02_proj.bp', blanketX, 0.5, blanketZ, blanketX, 0, blanketZ)
                 :SetVelocity(blanketVelocity):SetAcceleration(-0.3)
         end
 

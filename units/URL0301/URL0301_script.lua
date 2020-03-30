@@ -20,7 +20,7 @@ local CIFCommanderDeathWeapon = CWeapons.CIFCommanderDeathWeapon
 local CIFArtilleryWeapon = CWeapons.CIFArtilleryWeapon
 local CDFHvyProtonCannonWeapon = CWeapons.CDFHvyProtonCannonWeapon
 local CDFLaserHeavyWeapon = CWeapons.CDFLaserHeavyWeapon
-local RedLaserGenerator = import('/mods/Global Commanders/lua/GCweapons.lua').RedLaserGenerator
+local RedLaserGenerator = import('/mods/Global Commanders Enhanced/lua/GCweapons.lua').RedLaserGenerator
 
 --[[
 local getEnh = import('/lua/enhancementcommon.lua')

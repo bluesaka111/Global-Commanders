@@ -11,7 +11,7 @@ EmitterBlueprint {
 	SortOrder = -1.00,
 	LowFidelity = false,
 	Texture = [[/textures/particles/line_white_add_11.dds]],
-	RampTexture = [[/mods/Global Commanders/textures/particles/ra_0075_whitefast.dds]],
+	RampTexture = [[/mods/Global Commanders Enhanced/textures/particles/ra_0075_whitefast.dds]],
 	EmitRateCurve = {
 		XRange = 10.0000,
 		Keys = {

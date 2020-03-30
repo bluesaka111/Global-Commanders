@@ -174,7 +174,7 @@ UnitBlueprint {
             '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
         },
-        AlternateUpgradeIconPath = '/mods/Global Commanders/textures/ui/common/game/cybran-enhancements/',
+        AlternateUpgradeIconPath = '/mods/Global Commanders Enhanced/textures/ui/common/game/cybran-enhancements/',
         Mesh = {
             IconFadeInZoom = 130,
             LODs = {
@@ -1119,7 +1119,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 75,
-            ProjectileId = '/mods/Global Commanders/projectiles/CIFProtonArtillery/CIFProtonArtillery_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/CIFProtonArtillery/CIFProtonArtillery_proj.bp',
 	    ProjectileLifetime = 2,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -1460,7 +1460,7 @@ UnitBlueprint {
             MuzzleVelocity = 180,
             NotExclusive = true,
             PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/Global Commanders/projectiles/CDFStunShell/CDFStunShell_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/CDFStunShell/CDFStunShell_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {

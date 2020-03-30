@@ -171,8 +171,8 @@ UnitBlueprint {
             '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
         },
-	AlternateUpgradeIconPath = '/mods/Global Commanders/textures/ui/common/game/seraphim-enhancements/',
-        AnimationSitDown = '/mods/Global Commanders/units/gsl0001/gsl0001_Asitdown.sca',
+	AlternateUpgradeIconPath = '/mods/Global Commanders Enhanced/textures/ui/common/game/seraphim-enhancements/',
+        AnimationSitDown = '/mods/Global Commanders Enhanced/units/gsl0001/gsl0001_Asitdown.sca',
         AnimationWalk = '/units/xsl0001/xsl0001_awalk.sca',
         AnimationWalkRate = 1.1,
         IdleEffects = {
@@ -598,7 +598,7 @@ UnitBlueprint {
             Icon = 'sde',
             Name = '<LOC enhancements_GCS06>Chronotron Splash Damage Upgrade',
             ChronotronCannonNewDamageRadius = 4,
-            NewProjectileBlueprint = '/mods/Global Commanders/projectiles/SDFMegaCannon/SDFMegaCannon_proj.bp',
+            NewProjectileBlueprint = '/mods/Global Commanders Enhanced/projectiles/SDFMegaCannon/SDFMegaCannon_proj.bp',
             Prerequisite = 'BlastAttack',
             Slot = 'RCH',
             UpgradeEffectBones = {
@@ -1118,7 +1118,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-            ProjectileId = '/mods/Global Commanders/projectiles/SDFChronatronCannon/SDFChronatronCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SDFChronatronCannon/SDFChronatronCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 2,
             RackBones = {
                 {
@@ -1227,7 +1227,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 100,
-            ProjectileId = '/mods/Global Commanders/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1303,7 +1303,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 100,
-            ProjectileId = '/mods/Global Commanders/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1379,7 +1379,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 100,
-            ProjectileId = '/mods/Global Commanders/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1455,7 +1455,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 100,
-            ProjectileId = '/mods/Global Commanders/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1531,7 +1531,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 100,
-            ProjectileId = '/mods/Global Commanders/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1607,7 +1607,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 100,
-            ProjectileId = '/mods/Global Commanders/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1683,7 +1683,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 100,
-            ProjectileId = '/mods/Global Commanders/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1759,7 +1759,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 100,
-            ProjectileId = '/mods/Global Commanders/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SAAAntiAirMissile/SAAAntiAirMissile_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.25,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -2490,7 +2490,7 @@ UnitBlueprint {
             NukeOuterRingTotalTime = 0,
             NukeWeapon = true,
             PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/Global Commanders/projectiles/SIFNukeShell/SIFNukeShell_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SIFNukeShell/SIFNukeShell_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {

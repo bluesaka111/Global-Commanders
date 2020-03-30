@@ -160,8 +160,8 @@ UnitBlueprint {
             '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
         },
-        AlternateUpgradeIconPath = '/mods/Global Commanders/textures/ui/common/game/cybran-enhancements/',
-        AnimationSitDown = '/mods/Global Commanders/units/grl0001/grl0001_Asitdown.sca',
+        AlternateUpgradeIconPath = '/mods/Global Commanders Enhanced/textures/ui/common/game/cybran-enhancements/',
+        AnimationSitDown = '/mods/Global Commanders Enhanced/units/grl0001/grl0001_Asitdown.sca',
         AnimationWalk = '/units/url0001/url0001_awalk02.sca',
         AnimationWalkRate = 1.7,
         IdleEffects = {
@@ -1170,7 +1170,7 @@ UnitBlueprint {
             NukeOuterRingRadius = 64,
             NukeOuterRingTicks = 32,
             NukeOuterRingTotalTime = 0,
-            ProjectileId = '/mods/Global Commanders/effects/entities/CybranNukeEffectController01/CybranNukeEffectController01_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/effects/entities/CybranNukeEffectController01/CybranNukeEffectController01_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {
@@ -1553,7 +1553,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
-            ProjectileId = '/mods/Global Commanders/projectiles/CIFProtonArtillery/CIFProtonArtillery_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/CIFProtonArtillery/CIFProtonArtillery_proj.bp',
 	    ProjectileLifetime = 5,
             ProjectilesPerOnFire = 2,
             RackBones = {
@@ -2441,7 +2441,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 0,
-            ProjectileId = '/mods/Global Commanders/effects/Entities/EMPEffect01/EMPEffect01_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/effects/Entities/EMPEffect01/EMPEffect01_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {
@@ -2471,7 +2471,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 0,
-            ProjectileId = '/mods/Global Commanders/effects/Entities/EMPEffect03/EMPEffect03_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/effects/Entities/EMPEffect03/EMPEffect03_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {

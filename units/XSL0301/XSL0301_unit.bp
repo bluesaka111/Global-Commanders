@@ -156,7 +156,7 @@ UnitBlueprint {
             '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
         },
-	AlternateUpgradeIconPath = '/mods/Global Commanders/textures/ui/common/game/seraphim-enhancements/',
+	AlternateUpgradeIconPath = '/mods/Global Commanders Enhanced/textures/ui/common/game/seraphim-enhancements/',
         AnimationWalk = '/units/XSL0301/XSL0301_AWalk01.sca',
         AnimationWalkRate = 1,
         IdleEffects = {
@@ -370,7 +370,7 @@ UnitBlueprint {
             ImpactEffects = 'SeraphimShieldHit01',
             MaintenanceConsumptionPerSecondEnergy = 500,
             Name = '<LOC enhancements_0028>Personal Shield Generator',
-            OwnerShieldMesh = '/mods/Global Commanders/units/xsl0301/xsl0301_personalshield_mesh',
+            OwnerShieldMesh = '/mods/Global Commanders Enhanced/units/xsl0301/xsl0301_personalshield_mesh',
             RegenAssistMult = 10,
             ShieldEnergyDrainRechargeTime = 5,
             ShieldMaxHealth = 55000,
@@ -823,7 +823,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 35,
-            ProjectileId = '/mods/Global Commanders/projectiles/SDFChronatronCannon/SDFChronatronCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SDFChronatronCannon/SDFChronatronCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 5,
             RackBones = {
                 {
@@ -1340,7 +1340,7 @@ UnitBlueprint {
             MuzzleVelocity = 180,
             NotExclusive = true,
             PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/mods/Global Commanders/projectiles/SIFBoomShell/SIFBoomShell_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/SIFBoomShell/SIFBoomShell_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {

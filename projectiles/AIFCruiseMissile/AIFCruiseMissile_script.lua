@@ -1,8 +1,8 @@
-local AQuantumWarheadProjectile = import('/mods/Global Commanders/lua/GCprojectiles.lua').AQuantumWarheadProjectile
+local AQuantumWarheadProjectile = import('/mods/Global Commanders Enhanced/lua/GCprojectiles.lua').AQuantumWarheadProjectile
 
 AIFCruiseMissile = Class(AQuantumWarheadProjectile) {
 
-    Beams = {'/mods/Global Commanders/effects/emitters/aeon_nuke_exhaust_beam_emit.bp',},
+    Beams = {'/mods/Global Commanders Enhanced/effects/emitters/aeon_nuke_exhaust_beam_emit.bp',},
 
     DoTakeDamage = function(self, instigator, amount, vector, damageType)
         if self.ProjectileDamaged then

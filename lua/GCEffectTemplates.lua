@@ -1,6 +1,6 @@
 TableCat = import('/lua/utilities.lua').TableCat
-EmtBpPathAlt = '/mods/Global Commanders/effects/Emitters/'
-ModPath = '/mods/Global Commanders/effects/Emitters/'
+EmtBpPathAlt = '/mods/Global Commanders Enhanced/effects/Emitters/'
+ModPath = '/mods/Global Commanders Enhanced/effects/Emitters/'
 EmtBpPath = '/effects/emitters/'
 
 

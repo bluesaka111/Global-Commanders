@@ -31,7 +31,7 @@ local EffectUtil = import('/lua/EffectUtilities.lua')
 local DefaultDamage = import('/lua/sim/defaultdamage.lua')
 local podteleport,podlocation
 
-local RemoteTracking = import('/mods/Global Commanders/lua/RemoteTracking.lua').RemoteTracking
+local RemoteTracking = import('/mods/Global Commanders Enhanced/lua/RemoteTracking.lua').RemoteTracking
 SWalkingLandUnit = RemoteTracking( SWalkingLandUnit ) 
 
 GSL0001 = Class( SWalkingLandUnit ) {
@@ -391,7 +391,7 @@ GSL0001 = Class( SWalkingLandUnit ) {
 		self:PlayUnitSound('GateOut')
 								
 		Warp(self, destination, self:GetOrientation())
-		self:CreateProjectile( '/mods/Global Commanders/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
+		self:CreateProjectile( '/mods/Global Commanders Enhanced/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
 
 		WaitSeconds(.3)
 		self:GetNavigator():AbortMove()

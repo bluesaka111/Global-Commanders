@@ -2,13 +2,6 @@ UnitBlueprint {
     Merge = true,
     BlueprintId="uab2305",
 
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
-
     Categories = {
         'PRODUCTSC1',
         'SELECTABLE',
@@ -34,7 +27,7 @@ UnitBlueprint {
 	
     Weapon = {
         {
-            ProjectileId = '/mods/Global Commanders/projectiles/AIFQuantumNukeMissile/AIFQuantumNukeMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/AIFQuantumNukeMissile/AIFQuantumNukeMissile_proj.bp',
         },
     },
 }
@@ -43,16 +36,9 @@ UnitBlueprint {
     Merge = true,
     BlueprintId="uas0304",
 
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
-
     Weapon = {
         {
-            ProjectileId = '/mods/Global Commanders/projectiles/AIFQuantumSubNukeMissile/AIFQuantumSubNukeMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/AIFQuantumSubNukeMissile/AIFQuantumSubNukeMissile_proj.bp',
         },
     },
 }
@@ -60,13 +46,6 @@ UnitBlueprint {
 UnitBlueprint {
     Merge = true,
     BlueprintId="ueb2305",
-
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
 
     Categories = {
         'PRODUCTSC1',
@@ -94,26 +73,7 @@ UnitBlueprint {
 
 UnitBlueprint {
     Merge = true,
-    BlueprintId="ues0304",
-
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
-}
-
-UnitBlueprint {
-    Merge = true,
     BlueprintId="urb2305",
-
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
 
     Categories = {
         'PRODUCTSC1',
@@ -140,7 +100,7 @@ UnitBlueprint {
 	
     Weapon = {
         {
-            ProjectileId = '/mods/Global Commanders/projectiles/CIFEMPNukeMissile/CIFEMPNukeMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/CIFEMPNukeMissile/CIFEMPNukeMissile_proj.bp',
         },
     },
 }
@@ -149,16 +109,9 @@ UnitBlueprint {
     Merge = true,
     BlueprintId="urs0304",
 
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
-
     Weapon = {
         {
-            ProjectileId = '/mods/Global Commanders/projectiles/CIFSubNukeMissile/CIFSubNukeMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/CIFSubNukeMissile/CIFSubNukeMissile_proj.bp',
         },
     },
 }
@@ -166,13 +119,6 @@ UnitBlueprint {
 UnitBlueprint {
     Merge = true,
     BlueprintId="xsb2305",
-
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
 
     Categories = {
         'PRODUCTFA',
@@ -196,28 +142,4 @@ UnitBlueprint {
 	Economy = {
 		BuildRate = 10000,
 	},
-}
-
-UnitBlueprint {
-    Merge = true,
-    BlueprintId="xsb2401",
-
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
-}
-
-UnitBlueprint {
-    Merge = true,
-    BlueprintId="xss0302",
-
-    Audio = {
-        NuclearLaunchDetected = Sound {
-            Bank = 'VO_BattlePackSB',
-            Cue = 'VOC_COMPUTER_Strategic_Launch_',
-        },
-    },
 }

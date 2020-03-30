@@ -2,11 +2,11 @@ local NullShell = import('/lua/sim/defaultprojectiles.lua').NullShell
 local RandomFloat = import('/lua/utilities.lua').GetRandomFloat
 local RandomInt = import('/lua/utilities.lua').GetRandomInt
 local EffectTemplate = import('/lua/EffectTemplates.lua')
-local GCEffectTemplate = import('/mods/Global Commanders/lua/GCEffectTemplates.lua')
+local GCEffectTemplate = import('/mods/Global Commanders Enhanced/lua/GCEffectTemplates.lua')
 
-local AeonNukeEffect04 = '/mods/Global Commanders/effects/Entities/AeonNukeEffect04/AeonNukeEffect04_proj.bp' 
-local AeonNukeEffect05 = '/mods/Global Commanders/effects/Entities/AeonNukeEffect05/AeonNukeEffect05_proj.bp'
-local AeonNukeEffect06 = '/mods/Global Commanders/effects/Entities/AeonNukeEffect06/AeonNukeEffect06_proj.bp'
+local AeonNukeEffect04 = '/mods/Global Commanders Enhanced/effects/Entities/AeonNukeEffect04/AeonNukeEffect04_proj.bp' 
+local AeonNukeEffect05 = '/mods/Global Commanders Enhanced/effects/Entities/AeonNukeEffect05/AeonNukeEffect05_proj.bp'
+local AeonNukeEffect06 = '/mods/Global Commanders Enhanced/effects/Entities/AeonNukeEffect06/AeonNukeEffect06_proj.bp'
 
 
 AeonNukeEffectController01 = Class(NullShell) {

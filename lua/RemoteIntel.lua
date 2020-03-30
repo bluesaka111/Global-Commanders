@@ -1,7 +1,7 @@
 local Entity = import('/lua/sim/Entity.lua').Entity
 local EffectUtil = import('/lua/EffectUtilities.lua')
 VizMarker = Class(Entity) {
-    FieldEffect = '/mods/Global Commanders/effects/emitters/cybran_cloak_aura_01_emit.bp',
+    FieldEffect = '/mods/Global Commanders Enhanced/effects/emitters/cybran_cloak_aura_01_emit.bp',
     
     __init = function(self, spec)
         #LOG('__VizMarker')

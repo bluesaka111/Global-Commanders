@@ -1,4 +1,4 @@
-local SDFMegaCannonProjectile = import('/mods/Global Commanders/lua/GCprojectiles.lua').SDFMegaCannonProjectile
+local SDFMegaCannonProjectile = import('/mods/Global Commanders Enhanced/lua/GCprojectiles.lua').SDFMegaCannonProjectile
 
 SDFMegaCannon = Class(SDFMegaCannonProjectile) {}
 

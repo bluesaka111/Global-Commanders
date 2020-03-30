@@ -1,4 +1,4 @@
-local SDFMultigunProjectile = import('/mods/Global Commanders/lua/GCprojectiles.lua').SDFMultigunProjectile
+local SDFMultigunProjectile = import('/mods/Global Commanders Enhanced/lua/GCprojectiles.lua').SDFMultigunProjectile
 
 SDFMultigun = Class(SDFMultigunProjectile) {}
 

@@ -4,7 +4,7 @@ local EffectTemplate = import('/lua/EffectTemplates.lua')
 LaserBotTerran01 = Class(TLaserBotProjectile) {
 
     FxTrails = {},
-    PolyTrail = '/mods/Global Commanders/effects/Emitters/bluelaser_emit.bp',
+    PolyTrail = '/mods/Global Commanders Enhanced/effects/Emitters/bluelaser_emit.bp',
 
     # Hit Effects
     FxImpactUnit = EffectTemplate.TPlasmaCannonHeavyHit01,

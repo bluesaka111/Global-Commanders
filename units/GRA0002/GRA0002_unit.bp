@@ -140,6 +140,14 @@ UnitBlueprint {
         SizeZ = 1,
     },
     General = {
+		BuildBones = {
+            AimBone = Laser_Muzzle,
+            BuildEffectBones = {
+                'Laser_Muzzle',
+            },
+            PitchBone = 'Laser_Muzzle',
+            YawBone = 'URA0002',
+        },
         CapCost = 0,
         Category = 'Gunship',
         Classification = 'RULEUC_MilitaryAircraft',

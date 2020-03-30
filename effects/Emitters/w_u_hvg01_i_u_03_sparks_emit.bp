@@ -12,8 +12,8 @@ EmitterBlueprint {
 	SortOrder = -1.00,
 	LowFidelity = false,
 	MedFidelity = false,
-	Texture = [[/mods/Global Commanders/textures/particles/sp_0005_35.dds]],
-	RampTexture = [[/mods/Global Commanders/textures/particles/ra_0075_whitefast.dds]],
+	Texture = [[/mods/Global Commanders Enhanced/textures/particles/sp_0005_35.dds]],
+	RampTexture = [[/mods/Global Commanders Enhanced/textures/particles/ra_0075_whitefast.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

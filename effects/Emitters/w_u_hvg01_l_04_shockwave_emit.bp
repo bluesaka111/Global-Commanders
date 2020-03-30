@@ -8,8 +8,8 @@ EmitterBlueprint {
 	InterpolateEmission = false,
 	SortOrder = 1.00,
 	LowFidelity = false,
-	Texture = [[/mods/Global Commanders/textures/particles/rn_0004_55.dds]],
-	RampTexture = [[/mods/Global Commanders/textures/particles/ra_0124_fire.dds]],
+	Texture = [[/mods/Global Commanders Enhanced/textures/particles/rn_0004_55.dds]],
+	RampTexture = [[/mods/Global Commanders Enhanced/textures/particles/ra_0124_fire.dds]],
 	EmitRateCurve = {
 		XRange = 1.0000,
 		Keys = {

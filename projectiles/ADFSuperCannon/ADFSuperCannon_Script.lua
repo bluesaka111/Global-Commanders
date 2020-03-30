@@ -1,4 +1,4 @@
-local ADFSuperCannonProjectile = import('/mods/Global Commanders/lua/GCprojectiles.lua').ADFSuperCannonProjectile
+local ADFSuperCannonProjectile = import('/mods/Global Commanders Enhanced/lua/GCprojectiles.lua').ADFSuperCannonProjectile
 
 ADFSuperCannon = Class(ADFSuperCannonProjectile) {}
 

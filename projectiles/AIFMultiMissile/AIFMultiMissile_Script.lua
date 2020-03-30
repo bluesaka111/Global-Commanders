@@ -59,7 +59,7 @@ AIFMultiMissile = Class(AMissileSerpentineProjectile) {
             --KillThread(self.MoveThread)         
 
 			local FxFragEffect = EffectTemplate.SThunderStormCannonProjectileSplitFx 
-			local ChildProjectileBP = '/mods/Global Commanders/projectiles/AIFMultiMissileChild/AIFMultiMissileChild_proj.bp'  
+			local ChildProjectileBP = '/mods/Global Commanders Enhanced/projectiles/AIFMultiMissileChild/AIFMultiMissileChild_proj.bp'  
               
 			### Split effects
 			for k, v in FxFragEffect do

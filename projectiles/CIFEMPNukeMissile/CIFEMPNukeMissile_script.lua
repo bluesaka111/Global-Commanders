@@ -20,7 +20,7 @@ CIFEMPNukeMissile = Class(CEMPFluxWarheadProjectile) {
                 self:PlaySound(myBlueprint.Audio.Explosion)
             end
     
-            nukeProjectile = self:CreateProjectile('/mods/Global Commanders/effects/entities/CybranNukeEffectController01/CybranNukeEffectController01_proj.bp', 0, 0, 0, 0, 0, 0):SetCollision(false)
+            nukeProjectile = self:CreateProjectile('/mods/Global Commanders Enhanced/effects/entities/CybranNukeEffectController01/CybranNukeEffectController01_proj.bp', 0, 0, 0, 0, 0, 0):SetCollision(false)
             local pos = self:GetPosition()
 	    pos[2] = pos[2] + 12
             Warp( nukeProjectile, pos)

@@ -151,7 +151,7 @@ UnitBlueprint {
             '<LOC ability_omni>Omni Sensor',
             '<LOC ability_deathaoe>Volatile',
         },
-	AlternateUpgradeIconPath = '/mods/Global Commanders/textures/ui/common/game/uef-enhancements/',
+	AlternateUpgradeIconPath = '/mods/Global Commanders Enhanced/textures/ui/common/game/uef-enhancements/',
         AnimationWalk = '/units/uel0301/uel0301_awalk01.sca',
         AnimationWalkRate = 3.2,
         IdleEffects = {
@@ -505,7 +505,7 @@ UnitBlueprint {
             ImpactEffects = 'UEFShieldHit01',
             MaintenanceConsumptionPerSecondEnergy = 500,
             Name = '<LOC enhancements_0073>Personal Shield Generator',
-            OwnerShieldMesh = '/mods/Global Commanders/units/uel0301/UEL0301_PersonalShield_mesh',
+            OwnerShieldMesh = '/mods/Global Commanders Enhanced/units/uel0301/UEL0301_PersonalShield_mesh',
             PersonalShield = true,
             RegenAssistMult = 10,
             ShieldEnergyDrainRechargeTime = 5,
@@ -806,7 +806,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 60,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFAntiMatterCannon/TDFAntiMatterCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFAntiMatterCannon/TDFAntiMatterCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -881,7 +881,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 60,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFHeavyIonizedPlasmaCannon/TDFHeavyIonizedPlasmaCannon_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFHeavyIonizedPlasmaCannon/TDFHeavyIonizedPlasmaCannon_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -954,7 +954,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.2,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/Global Commanders/projectiles/TAAFlayerMissile/TAAFlayerMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TAAFlayerMissile/TAAFlayerMissile_proj.bp',
             ProjectileLifetime = 6,
             ProjectilesPerOnFire = 4,
             RackBones = {
@@ -1019,7 +1019,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.2,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/Global Commanders/projectiles/TAAFlayerMissile/TAAFlayerMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TAAFlayerMissile/TAAFlayerMissile_proj.bp',
             ProjectileLifetime = 6,
             ProjectilesPerOnFire = 4,
             RackBones = {
@@ -1090,7 +1090,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 9,
             MuzzleVelocity = 10,
             NotExclusive = true,
-            ProjectileId = '/mods/Global Commanders/projectiles/TIFSpreadCruiseMissile/TIFSpreadCruiseMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TIFSpreadCruiseMissile/TIFSpreadCruiseMissile_proj.bp',
             ProjectileLifetime = 20,
             RackBones = {
                 {
@@ -1172,7 +1172,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,
-            ProjectileId = '/mods/Global Commanders/projectiles/TDFPlasmaGun/TDFPlasmaGun_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TDFPlasmaGun/TDFPlasmaGun_proj.bp',
             ProjectileLifetime = 20,
             ProjectilesPerOnFire = 1,
             RackBones = {

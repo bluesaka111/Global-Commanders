@@ -7,6 +7,6 @@ TrailEmitterBlueprint {
     	BlendMode = 3,
     	TextureRepeatRate = 1,
     	LODCutoff = 260,
-	RampTexture = [[/mods/Global Commanders/textures/particles/AeonSuperCannon_polytrails.dds]],
+	RampTexture = [[/mods/Global Commanders Enhanced/textures/particles/AeonSuperCannon_polytrails.dds]],
 	RepeatTexture = [[/textures/particles/ramp_phalanx_munition_01.dds]],
 }

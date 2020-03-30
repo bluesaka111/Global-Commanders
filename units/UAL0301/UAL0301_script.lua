@@ -12,7 +12,7 @@ local AWalkingLandUnit = import('/lua/aeonunits.lua').AWalkingLandUnit
 
 local AWeapons = import('/lua/aeonweapons.lua')
 local ADFPhasonLaser = AWeapons.ADFPhasonLaser
-local ADFCannonOblivionWeapon = import('/mods/Global Commanders/lua/GCweapons.lua').ADFCannonOblivionWeapon02
+local ADFCannonOblivionWeapon = import('/mods/Global Commanders Enhanced/lua/GCweapons.lua').ADFCannonOblivionWeapon02
 local AIFCommanderDeathWeapon = AWeapons.AIFCommanderDeathWeapon
 local AAAZealotMissileWeapon = AWeapons.AAAZealotMissileWeapon
 local ADFCannonQuantumWeapon = AWeapons.ADFCannonQuantumWeapon
@@ -136,7 +136,7 @@ UAL0301 = Class(AWalkingLandUnit) {
 								
 				Warp(self, destination, self:GetOrientation())
 				
-				self:CreateProjectile( '/mods/Global Commanders/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
+				self:CreateProjectile( '/mods/Global Commanders Enhanced/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
 
 				WaitSeconds(.3) --wait at destination
 				self:GetNavigator():AbortMove()

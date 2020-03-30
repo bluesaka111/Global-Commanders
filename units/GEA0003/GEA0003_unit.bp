@@ -105,7 +105,7 @@ UnitBlueprint {
         RegenRate = 50,
         Shield = {
             ImpactEffects = 'UEFShieldHit01',
-            OwnerShieldMesh = '/mods/Global Commanders/units/UEA0003/UEA0003_personalshield_mesh',
+            OwnerShieldMesh = '/mods/Global Commanders Enhanced/units/UEA0003/UEA0003_personalshield_mesh',
             ShieldEnergyDrainRechargeTime = 2,
             ShieldMaxHealth = 9000,
             ShieldRechargeTime = 1,
@@ -341,7 +341,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 3,
             MuzzleVelocity = 50,
             NotExclusive = true,
-            ProjectileId = '/mods/Global Commanders/projectiles/TIFNapalmMissile/TIFNapalmMissile_proj.bp',
+            ProjectileId = '/mods/Global Commanders Enhanced/projectiles/TIFNapalmMissile/TIFNapalmMissile_proj.bp',
             ProjectileLifetime = 20,
             RackBones = {
                 {

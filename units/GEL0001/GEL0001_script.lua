@@ -17,17 +17,17 @@ local TSAMLauncher = WeaponsFile.TSAMLauncher
 local TANTorpedoAngler = WeaponsFile.TANTorpedoAngler
 local TDFGaussCannonWeapon = WeaponsFile.TDFLandGaussCannonWeapon
 local TIFStrategicMissileWeapon = WeaponsFile.TIFStrategicMissileWeapon
-local BigGaussCannonWeapon = import('/mods/Global Commanders/lua/GCweapons.lua').BigGaussCannonWeapon
+local BigGaussCannonWeapon = import('/mods/Global Commanders Enhanced/lua/GCweapons.lua').BigGaussCannonWeapon
 local CDFLaserHeavyWeapon = import('/lua/cybranweapons.lua').CDFLaserHeavyWeapon
 
-local RepairField = import('/mods/Global Commanders/lua/RepairField.lua').RepairField
+local RepairField = import('/mods/Global Commanders Enhanced/lua/RepairField.lua').RepairField
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local EffectUtil = import('/lua/EffectUtilities.lua')
 local Buff = import('/lua/sim/Buff.lua')
 local Shield = import('/lua/shield.lua').Shield
 local podteleport,podlocation
 
-local RemoteViewingRegen = import('/mods/Global Commanders/lua/RemoteRepair.lua').RemoteViewingRegen
+local RemoteViewingRegen = import('/mods/Global Commanders Enhanced/lua/RemoteRepair.lua').RemoteViewingRegen
 TWalkingLandUnit = RemoteViewingRegen( TWalkingLandUnit ) 
 
 GEL0001 = Class(TWalkingLandUnit) {    
@@ -181,7 +181,7 @@ GEL0001 = Class(TWalkingLandUnit) {
 								
 		Warp(self, destination, self:GetOrientation()) 
 				
-		self:CreateProjectile( '/mods/Global Commanders/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
+		self:CreateProjectile( '/mods/Global Commanders Enhanced/effects/entities/SuperTeleport/SuperTeleport_proj.bp', 0, 0.35, 0, nil, nil, nil):SetCollision(false)
 
 		WaitSeconds(.3) 
 		self:GetNavigator():AbortMove()	
