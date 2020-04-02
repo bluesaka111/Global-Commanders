@@ -5,7 +5,7 @@
 #**
 #**  Summary  :  Cybran Commander Unit Script
 #**
-#**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+#**  Copyright ï¿½ 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 local CWalkingLandUnit = import('/lua/cybranunits.lua').CWalkingLandUnit
 
@@ -95,7 +95,8 @@ GRL0001 = Class(CWalkingLandUnit) {
 		EMPWeapon02 = Class(CIFCommanderDeathWeapon) {},
 		DeathWeapon = Class(CIFCommanderDeathWeapon) {},
     },
-
+	DroneA = nil,
+	DroneB = nil,
     # ********
     # Creation
     # ********
@@ -126,11 +127,11 @@ GRL0001 = Class(CWalkingLandUnit) {
         if self:GetBlueprint().General.BuildBones then
             self:SetupBuildBones()
         end
+		
         # Restrict what enhancements will enable later
-        self:AddBuildRestriction( categories.CYBRAN * (categories.BUILTBYTIER2COMMANDER + categories.BUILTBYTIER3COMMANDER) )
+        self:AddBuildRestriction( categories.CYBRAN * (categories.BUILTBYTIER2COMMANDER + categories.BUILTBYTIER3COMMANDER + categories.BUILTBYTIER4COMMANDER) )
     end,
-
-
+	
     OnPrepareArmToBuild = function(self)
         CWalkingLandUnit.OnPrepareArmToBuild(self)
         if self:BeenDestroyed() then return end
@@ -711,7 +712,6 @@ GRL0001 = Class(CWalkingLandUnit) {
     	if not self:IsDead() then
 			if not self:IsDead() then 
 				self:ForkThread(self.SpawnDrone) 
-				WaitSeconds(1)
 			end
     	end
     end,
@@ -722,27 +722,25 @@ GRL0001 = Class(CWalkingLandUnit) {
             local myOrientation = self:GetOrientation()      
             if self.DroneA == nil or self.DroneA:IsDead() then
             	local location = self:GetPosition('AttachSpecial01')
-            	local drone = CreateUnit('GRA0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+            	local drone = CreateUnit('GRA0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 				self.DroneA = drone
-				drone:SetParent(self, 'DroneA')
-            	drone:SetCreator(self)
+				drone:SetParent(self, 'GRL0001')
+            	drone:SetCreator(self)  
 				IssueClearCommands({drone})
             	IssueGuard({drone}, self)
                 drone:PlayTeleportOutEffects()
 				self.Trash:Add(drone)
-				WaitSeconds(0.3)
 			end
             if self.DroneB == nil or self.DroneB:IsDead() then
             	local location = self:GetPosition('AttachSpecial02')
-				local drone = CreateUnit('GRA0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air')
+				local drone = CreateUnit('GRA0002', self:GetArmy(), location[1], location[2], location[3], myOrientation[1], myOrientation[2], myOrientation[3], myOrientation[4], 'Air') 
 				self.DroneB = drone
-				drone:SetParent(self, 'DroneB')
+				drone:SetParent(self, 'GRL0001')
             	drone:SetCreator(self)
 				IssueClearCommands({drone})
             	IssueGuard({drone}, self)
                 drone:PlayTeleportOutEffects()
 				self.Trash:Add(drone)
-				WaitSeconds(0.3)
             end
     	end
     end,
@@ -755,13 +753,15 @@ GRL0001 = Class(CWalkingLandUnit) {
 
     OnDamage = function(self, instigator, amount, vector, damagetype) 
     	CWalkingLandUnit.OnDamage(self, instigator, amount, vector, damagetype) 
-		if self.DroneA != nil then
-			IssueClearCommands({self.Drone1})
-			IssueAttack({self.Drone1}, instigator)
+		if self.DroneA != nil and not self.DroneA:IsDead() then
+			IssueStop({self.DroneA})
+			IssueClearCommands({self.DroneA})
+			IssueAttack({self.DroneA}, instigator)
 		end
-		if self.DroneB != nil then
-			IssueClearCommands({self.Drone2})
-			IssueAttack({self.Drone2}, instigator)
+		if self.DroneB != nil and not self.DroneB:IsDead() then
+			IssueStop({self.DroneB})
+			IssueClearCommands({self.DroneB})
+			IssueAttack({self.DroneB}, instigator)
 		end 
     end,
     
@@ -860,11 +860,16 @@ GRL0001 = Class(CWalkingLandUnit) {
         end
         #otherwise, we should finish killing the unit
         CWalkingLandUnit.OnKilled(self, instigator, type, overkillRatio)
-    	if table.getn({self.DroneTable}) > 0 then
-    	    for k, v in self.DroneTable do 
-    	        IssueClearCommands({self.DroneTable[k]}) 
-    	        IssueKillSelf({self.DroneTable[k]})
-    	    end 
+		if self.DroneChecker then
+			KillThread(self.DroneChecker)
+		end
+    	if self.DroneA != nil then
+			IssueClearCommands({self.DroneA}) 
+			IssueKillSelf({self.DroneA})
+    	end
+		if self.DroneB != nil then
+			IssueClearCommands({self.DroneB}) 
+			IssueKillSelf({self.DroneB})
     	end
     end,
     

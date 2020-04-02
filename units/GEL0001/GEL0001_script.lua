@@ -165,7 +165,7 @@ GEL0001 = Class(TWalkingLandUnit) {
         self.HasLeftPod = false
         self.HasRightPod = false
         # Restrict what enhancements will enable later
-        self:AddBuildRestriction( categories.UEF * (categories.BUILTBYTIER2COMMANDER + categories.BUILTBYTIER3COMMANDER) )
+        self:AddBuildRestriction( categories.UEF * (categories.BUILTBYTIER2COMMANDER + categories.BUILTBYTIER3COMMANDER + categories.BUILTBYTIER4COMMANDER) )
     end,
 
     OnMotionHorzEventChange = function( self, new, old )

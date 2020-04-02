@@ -5,14 +5,15 @@
 #**
 #**  Summary  :  UEF CDR Pod Script
 #**
-#**  Copyright © 2005 Gas Powered Games, Inc.  All rights reserved.
+#**  Copyright ï¿½ 2005 Gas Powered Games, Inc.  All rights reserved.
 #****************************************************************************
 local AAirUnit = import('/lua/aeonunits.lua').AAirUnit
 local AIFCommanderDeathWeapon = import('/lua/aeonweapons.lua').AIFCommanderDeathWeapon
 local EffectUtil = import('/lua/EffectUtilities.lua')
+local AWeapons = import('/lua/aeonweapons.lua')
+local ADFPhasonLaser = AWeapons.ADFPhasonLaser
 
 GAA0003 = Class(AAirUnit) {
-
     Weapons = {
         DeathWeapon = Class(AIFCommanderDeathWeapon) {},
     },

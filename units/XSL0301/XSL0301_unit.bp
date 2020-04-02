@@ -977,7 +977,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 64,
             NotExclusive = true,
-            ProjectileId = '/Mods/Global Commanders/projectiles/SDFBigBallShell/SDFBigBallShell_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/SDFBigBallShell/SDFBigBallShell_proj.bp',
 	    ProjectileLifetime = 2.5,
             RackBones = {
                 {
@@ -1063,7 +1063,7 @@ UnitBlueprint {
             NukeOuterRingTicks = 20,
             NukeOuterRingTotalTime = 0,
             NukeWeapon = true,
-            ProjectileId = '/Mods/Global Commanders/projectiles/SIFMissileNukeCDR/SIFMissileNukeCDR_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/SIFMissileNukeCDR/SIFMissileNukeCDR_proj.bp',
             ProjectileLifetime = 80,
             RackBones = {
                 {

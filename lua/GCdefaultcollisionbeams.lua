@@ -2,7 +2,7 @@ local CollisionBeam = import('/lua/sim/CollisionBeam.lua').CollisionBeam
 local EffectTemplate = import('/lua/EffectTemplates.lua')
 local Util = import('/lua/utilities.lua')
 
-local GCEffectTemplate = import('/Mods/Global Commanders/lua/GCEffectTemplates.lua')
+local GCEffectTemplate = import('/Mods/Global Commanders Enhanced/lua/GCEffectTemplates.lua')
 
 
 SCCollisionBeam = Class(CollisionBeam) {

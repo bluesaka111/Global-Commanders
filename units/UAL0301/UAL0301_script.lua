@@ -40,7 +40,7 @@ UAL0301 = Class(AWalkingLandUnit) {
     OnCreate = function(self)
         AWalkingLandUnit.OnCreate(self)
         self:SetCapturable(false)
-	self.canTeleport = 'false'
+		self.canTeleport = 'false'
         self:HideBone('Turbine', true)
         self:HideBone('Head_Upgrade', true)
         self:HideBone('Missile_Turret01', true)
@@ -58,15 +58,15 @@ UAL0301 = Class(AWalkingLandUnit) {
     
     OnStopBeingBuilt = function(self, builder, layer)
         AWalkingLandUnit.OnStopBeingBuilt(self, builder, layer)
-	self:SetWeaponEnabledByLabel('Torpedo', false)
-	self:SetWeaponEnabledByLabel('MissileRack01', false)
-	self:SetWeaponEnabledByLabel('MissileRack02', false)
-	self:SetWeaponEnabledByLabel('LaserCannon', false)
-	self:SetWeaponEnabledByLabel('CruiseMissile01', false)
-	self:SetWeaponEnabledByLabel('CruiseMissile02', false)
-	self:SetWeaponEnabledByLabel('RightQuantumCannon', false)
-	self:SetWeaponEnabledByLabel('LeftQuantumCannon', false)
-	self.WeaponsEnabled = true
+		self:SetWeaponEnabledByLabel('Torpedo', false)
+		self:SetWeaponEnabledByLabel('MissileRack01', false)
+		self:SetWeaponEnabledByLabel('MissileRack02', false)
+		self:SetWeaponEnabledByLabel('LaserCannon', false)
+		self:SetWeaponEnabledByLabel('CruiseMissile01', false)
+		self:SetWeaponEnabledByLabel('CruiseMissile02', false)
+		self:SetWeaponEnabledByLabel('RightQuantumCannon', false)
+		self:SetWeaponEnabledByLabel('LeftQuantumCannon', false)
+		self.WeaponsEnabled = true
     end,
     
     OnPrepareArmToBuild = function(self)

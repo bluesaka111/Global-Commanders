@@ -272,8 +272,10 @@ UnitBlueprint {
         BuildTime = 600000,
         BuildableCategory = {
             'BUILTBYCOMMANDER CYBRAN',
+			'BUILTBYTIER1COMMANDER CYBRAN',
             'BUILTBYTIER2COMMANDER CYBRAN',
             'BUILTBYTIER3COMMANDER CYBRAN',
+			'BUILTBYTIER4COMMANDER CYBRAN',
         },
         InitialRemoteViewingEnergyDrain = 1000,
         MaintenanceConsumptionPerSecondEnergy = 0,
@@ -764,6 +766,7 @@ UnitBlueprint {
             BuildCostEnergy = 990000,
             BuildCostMass = 11250,
             BuildTime = 40500,
+			BuildableCategoryAdds = 'BUILTBYTIER4COMMANDER CYBRAN',
             Icon = 't4',
             Name = '<LOC enhancements_GCR16>Tech 4 Engineering Suite',
             NewBuildRate = 2500,
@@ -1220,7 +1223,7 @@ UnitBlueprint {
             DamageRadius = 0.5,
             DamageType = 'Normal',
             DisplayName = 'Heavy Microwave Laser',
-	    DoNotCollideList = {
+			DoNotCollideList = {
                 'TORPEDO',
                 'MISSILE',
             },
@@ -1231,7 +1234,7 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             HeadingArcCenter = 0,
-            HeadingArcRange = 180,
+            HeadingArcRange = 80,
             Label = 'MLG',
             MaxRadius = 60,
             MuzzleChargeDelay = 0,
@@ -1313,7 +1316,7 @@ UnitBlueprint {
             DamageRadius = 2,
             DamageType = 'Normal',
             DisplayName = 'Heavy Microwave Laser',
-	    DoNotCollideList = {
+			DoNotCollideList = {
                 'TORPEDO',
                 'MISSILE',
             },
@@ -1324,7 +1327,7 @@ UnitBlueprint {
             },
             FiringTolerance = 2,
             HeadingArcCenter = 0,
-            HeadingArcRange = 180,
+            HeadingArcRange = 80,
             Label = 'MLG02',
             MaxRadius = 60,
             MuzzleChargeDelay = 0,
@@ -1554,7 +1557,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 25,
             ProjectileId = '/mods/Global Commanders Enhanced/projectiles/CIFProtonArtillery/CIFProtonArtillery_proj.bp',
-	    ProjectileLifetime = 5,
+			ProjectileLifetime = 5,
             ProjectilesPerOnFire = 2,
             RackBones = {
                 {
@@ -1583,9 +1586,9 @@ UnitBlueprint {
                 'ALLUNITS',
             },
             TargetRestrictDisallow = 'UNTARGETABLE',
-	    TrackingRadius = 1.15,
+			TrackingRadius = 1.15,
             TurretBoneMuzzle = 'Artillery_Muzzle01',
-            TurretBonePitch = 'Artillery_Barrel',
+            TurretBonePitch = 'Artillery',
             TurretBoneYaw = 'Torso',
             TurretDualManipulators = false,
             TurretPitch = 30,
@@ -1600,7 +1603,7 @@ UnitBlueprint {
             WeaponUnpackLocksMotion = false,
             WeaponUnpacks = false,
         },
-	{
+		{
             AboveWaterFireOnly = true,
             AboveWaterTargetsOnly = true,
             AlwaysRecheckTarget = true,
@@ -2201,8 +2204,6 @@ UnitBlueprint {
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
             RateOfFire = 0.8,
-            SlavedToBody = true,
-            SlavedToBodyArcRange = 50,
             TargetCheckInterval = 0.625,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -2278,8 +2279,6 @@ UnitBlueprint {
             RackSlavedToTurret = false,
             RangeCategory = 'UWRC_DirectFire',
             RateOfFire = 0.8,
-            SlavedToBody = true,
-            SlavedToBodyArcRange = 50,
             TargetCheckInterval = 0.625,
             TargetPriorities = {
                 'SPECIALHIGHPRI',
@@ -2303,8 +2302,8 @@ UnitBlueprint {
             TurretYawSpeed = 45,
             Turreted = true,
             WeaponCategory = 'Direct Fire',
-	},
-	{
+		},
+		{
             AboveWaterTargetsOnly = true,
             Audio = {
                 Fire = Sound {
@@ -2330,7 +2329,7 @@ UnitBlueprint {
             },
             Damage = 1000,
             DamageRadius = 8,
-	    DamageFriendly = false,
+			DamageFriendly = false,
             DamageType = 'Normal',
             EnergyChargeForFirstShot = false,
             EnergyDrainPerSecond = 1000,
@@ -2347,7 +2346,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 120,
-            ProjectileId = '/Mods/Global Commanders/projectiles/CIFEMPMissile/CIFEMPMissile_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/CIFEMPMissile/CIFEMPMissile_proj.bp',
             ProjectileLifetime = 30,
             RackBones = {
                 {

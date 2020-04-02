@@ -22,7 +22,7 @@ UnitBlueprint {
     },
 	
 	Economy = {
-		BuildRate = 10000,
+		BuildRate = 20000,
 	},
 	
     Weapon = {
@@ -67,7 +67,7 @@ UnitBlueprint {
     },
 		
 	Economy = {
-		BuildRate = 10000,
+		BuildRate = 20000,
 	},
 }
 
@@ -95,7 +95,7 @@ UnitBlueprint {
     },
 	
 	Economy = {
-		BuildRate = 10000,
+		BuildRate = 20000,
 	},
 	
     Weapon = {
@@ -140,6 +140,6 @@ UnitBlueprint {
     },
 	
 	Economy = {
-		BuildRate = 10000,
+		BuildRate = 20000,
 	},
 }

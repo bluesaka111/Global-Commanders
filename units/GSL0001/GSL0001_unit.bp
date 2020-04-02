@@ -290,8 +290,10 @@ UnitBlueprint {
         BuildTime = 600000,
         BuildableCategory = {
             'BUILTBYCOMMANDER SERAPHIM',
+			'BUILTBYTIER1COMMANDER SERAPHIM',
             'BUILTBYTIER2COMMANDER SERAPHIM',
             'BUILTBYTIER3COMMANDER SERAPHIM',
+			'BUILTBYTIER4COMMANDER SERAPHIM',
         },
         InitialRemoteViewingEnergyDrain = 1000,
         MaintenanceConsumptionPerSecondEnergy = 0,
@@ -367,7 +369,7 @@ UnitBlueprint {
             ImpactEffects = 'SeraphimShieldHit01',
             MaintenanceConsumptionPerSecondEnergy = 300,
             Name = '<LOC enhancements_0049>Personal Shield Generator',
-            OwnerShieldMesh = '/Mods/Global Commanders/units/GSL0001/GSL0001_PhaseShield_mesh',
+            OwnerShieldMesh = '/Mods/Global Commanders Enhanced/units/GSL0001/GSL0001_PhaseShield_mesh',
             RegenAssistMult = 10,
             ShieldEnergyDrainRechargeTime = 5,
             ShieldMaxHealth = 55000,
@@ -393,7 +395,7 @@ UnitBlueprint {
             ImpactEffects = 'SeraphimShieldHit01',
             MaintenanceConsumptionPerSecondEnergy = 2000,
             Name = '<LOC enhancements_0015>Heavy Personal Shield Generator',
-            OwnerShieldMesh = '/Mods/Global Commanders/units/GSL0001/GSL0001_PhaseShield_mesh',
+            OwnerShieldMesh = '/Mods/Global Commanders Enhanced/units/GSL0001/GSL0001_PhaseShield_mesh',
             Prerequisite = 'Shield',
             RegenAssistMult = 10,
             ShieldEnergyDrainRechargeTime = 5,
@@ -727,6 +729,7 @@ UnitBlueprint {
             BuildCostEnergy = 990000,
             BuildCostMass = 11250,
             BuildTime = 40500,
+			BuildableCategoryAdds = 'BUILTBYTIER4COMMANDER SERAPHIM',
             Icon = 't4',
             Name = '<LOC enhancements_GCS07>Tech 4 Engineering Suite',
             NewBuildRate = 2500,
@@ -1838,7 +1841,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 6,
             MuzzleVelocity = 22,
             #PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/Mods/Global Commanders/projectiles/SDFMultigun/SDFMultigun_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/SDFMultigun/SDFMultigun_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -1922,7 +1925,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 6,
             MuzzleVelocity = 22,
             #PrefersPrimaryWeaponTarget = true,
-            ProjectileId = '/Mods/Global Commanders/projectiles/SDFMultigun/SDFMultigun_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/SDFMultigun/SDFMultigun_proj.bp',
             ProjectileLifetimeUsesMultiplier = 1.15,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -2136,7 +2139,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 65,
             MuzzleVelocityReduceDistance = 90,
-            ProjectileId = '/Mods/Global Commanders/projectiles/SDFPowerShell/SDFPowerShell_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/SDFPowerShell/SDFPowerShell_proj.bp',
             ProjectileLifetime = 120,
             ProjectilesPerOnFire = 1,
             RackBones = {
@@ -2215,7 +2218,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 65,
             NotExclusive = true,
-            ProjectileId = '/Mods/Global Commanders/projectiles/SDFBigBallShell/SDFBigBallShell_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/SDFBigBallShell/SDFBigBallShell_proj.bp',
             RackBones = {
                 {
                     MuzzleBones = {

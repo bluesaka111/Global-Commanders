@@ -129,7 +129,7 @@ GSL0001 = Class( SWalkingLandUnit ) {
         self.HasLeftPod = false
         self.HasRightPod = false		     
         # Restrict what enhancements will enable later
-        self:AddBuildRestriction( categories.SERAPHIM * (categories.BUILTBYTIER2COMMANDER + categories.BUILTBYTIER3COMMANDER) )
+        self:AddBuildRestriction( categories.SERAPHIM * (categories.BUILTBYTIER2COMMANDER + categories.BUILTBYTIER3COMMANDER + categories.BUILTBYTIER4COMMANDER) )
     end,
 
     OnPrepareArmToBuild = function(self)

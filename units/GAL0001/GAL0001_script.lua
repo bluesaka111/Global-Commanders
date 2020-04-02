@@ -38,11 +38,11 @@ GAL0001 = Class(AWalkingLandUnit) {
     Weapons = {
     	LeftDisruptor = Class(ADFCannonOblivionWeapon) {
 			OnCreate = function(self)
-					ADFCannonOblivionWeapon.OnCreate(self)
-					if not self.SpinManip then 
-						self.SpinManip = CreateRotator(self.unit, 'Left_Rotator', 'z', nil, 150, 150, 150)
-						self.unit.Trash:Add(self.SpinManip)
-					end
+				ADFCannonOblivionWeapon.OnCreate(self)
+				if not self.SpinManip then 
+					self.SpinManip = CreateRotator(self.unit, 'Left_Rotator', 'z', nil, 150, 150, 150)
+					self.unit.Trash:Add(self.SpinManip)
+				end
 			end,
 		},
         RightDisruptor = Class(ADFCannonOblivionWeapon) {
@@ -94,8 +94,10 @@ GAL0001 = Class(AWalkingLandUnit) {
 		self:SetupBuildBones()
         self.HasLeftPod = false
         self.HasRightPod = false
+		self.LeftPod = nil
+		self.RightPod = nil
         # Restrict what enhancements will enable later
-        self:AddBuildRestriction( categories.AEON * (categories.BUILTBYTIER2COMMANDER + categories.BUILTBYTIER3COMMANDER) )
+        self:AddBuildRestriction( categories.AEON * (categories.BUILTBYTIER2COMMANDER + categories.BUILTBYTIER3COMMANDER + categories.BUILTBYTIER4COMMANDER) )
     end,
 
     OnPrepareArmToBuild = function(self)
@@ -248,7 +250,6 @@ GAL0001 = Class(AWalkingLandUnit) {
                 CreateAttachedEmitter(self,bone,army, v)
             end
         end
-
         WaitSeconds(6)
     end,
 
@@ -257,7 +258,7 @@ GAL0001 = Class(AWalkingLandUnit) {
 
         if ( new == 'TopSpeed' ) and self.canTeleport == 'true' then
             ForkThread(function()
-            #self:HideBone(0, true)
+				self:HideBone(0, true)
                 Pos = self:GetNavigator():GetGoalPos()
                 destination = Vector(Pos[1], Pos[2], Pos[3])
 
@@ -270,13 +271,13 @@ GAL0001 = Class(AWalkingLandUnit) {
 
                 WaitSeconds(.3) --wait at destination
                 self:GetNavigator():AbortMove()
-                #self:ShowBone(0, true)
+                self:ShowBone(0, true)
             end)    
         end
     end,
 
     OnTeleportUnit = function(self, teleporter, location, orientation)
-	AWalkingLandUnit.OnTeleportUnit(self, teleporter, location, orientation)
+		AWalkingLandUnit.OnTeleportUnit(self, teleporter, location, orientation)
     	podteleporter = teleporter
     	podlocation = location
     end,
@@ -597,9 +598,9 @@ GAL0001 = Class(AWalkingLandUnit) {
            	IssueClearCommands({self})            
            	-- Forces the commander to stop
            	IssueStop({self})
-		self:SetSpeedMult(0)
-		self:SetTurnMult(0)
-		self:SetImmobile(true)
+			self:SetSpeedMult(0)
+			self:SetTurnMult(0)
+			self:SetImmobile(true)
 		-- Remove caps
             	self:RemoveCommandCap('RULEUCC_Attack')
             	self:RemoveCommandCap('RULEUCC_Move')
@@ -607,31 +608,31 @@ GAL0001 = Class(AWalkingLandUnit) {
             	self:AddBuildRestriction(categories.ALLUNITS)
             	self:RequestRefreshUI()
 		-- Setup Animation
-		if not self.AnimationManipulator then
-		    self.AnimationManipulator = CreateAnimator(self)
-		    self.Trash:Add(self.AnimationManipulator)
-		    self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationSitDown)
-		end
-		self.AnimationManipulator:SetRate(1.5)
+			if not self.AnimationManipulator then
+				self.AnimationManipulator = CreateAnimator(self)
+				self.Trash:Add(self.AnimationManipulator)
+				self.AnimationManipulator:PlayAnim(self:GetBlueprint().Display.AnimationSitDown)
+			end
+			self.AnimationManipulator:SetRate(1.5)
 		-- Destroy Shield
-            	self:DestroyShield()
-            	self:RemoveToggleCap('RULEUTC_ShieldToggle')
-            	--disable all active weapon
-            	self.hunkerMethodCall = true
-            	for label, state in self.hunkerwepstate do
-            	    if state then self:SetWeaponEnabledByLabel(label, false) end
-            	end
-            	self.hunkerMethodCall = false
-            	self.hunkerState = true
-            	#LOG(repr(self.hunkerwepstate))
-		-- Setup Shield
-            	ForkThread(function()
-            	    WaitSeconds(10)
-            	    self:CreateShield(self:GetBlueprint().Enhancements.HunkerShieldGeneratorField)
-            	    self:SetEnergyMaintenanceConsumptionOverride(200000)
-            	    self:SetMaintenanceConsumptionActive()
-            	end)
-            	Buff.ApplyBuff(self, 'AeonACUHunkerRegen')
+			self:DestroyShield()
+			self:RemoveToggleCap('RULEUTC_ShieldToggle')
+			--disable all active weapon
+			self.hunkerMethodCall = true
+			for label, state in self.hunkerwepstate do
+				if state then self:SetWeaponEnabledByLabel(label, false) end
+			end
+			self.hunkerMethodCall = false
+			self.hunkerState = true
+			#LOG(repr(self.hunkerwepstate))
+	-- Setup Shield
+			ForkThread(function()
+				WaitSeconds(10)
+				self:CreateShield(self:GetBlueprint().Enhancements.HunkerShieldGeneratorField)
+				self:SetEnergyMaintenanceConsumptionOverride(200000)
+				self:SetMaintenanceConsumptionActive()
+			end)
+			Buff.ApplyBuff(self, 'AeonACUHunkerRegen')
     	elseif bit == 1 then 
 		self:SetSpeedMult(1.0) 
 	    	self.canTeleport = 'true'
@@ -661,31 +662,31 @@ GAL0001 = Class(AWalkingLandUnit) {
 		-- Destroy Shield
             	self:DestroyShield()
 		-- Setup Shield
-            	self:AddToggleCap('RULEUTC_ShieldToggle')
-            	ForkThread(function()
-            	    WaitTicks(1)
-            	    self:CreatePersonalShield(self:GetBlueprint().Enhancements.ShieldHeavy)
-            	    self:SetEnergyMaintenanceConsumptionOverride(500)
-            	    self:SetMaintenanceConsumptionActive()
-            	end)
-            	if Buff.HasBuff( self, 'AeonACUHunkerRegen' ) then
-            	    Buff.RemoveBuff( self, 'AeonACUHunkerRegen' )
-            	end
-            	--enable all reserched weapon
-            	self.hunkerState = false
-            	self.hunkerMethodCall = true
-            	for label, state in self.hunkerwepstate do
-            	    if state then self:SetWeaponEnabledByLabel(label, true) end
-            	end
-            	self.hunkerMethodCall = false
-            	#LOG(repr(self.hunkerwepstate))
-            	ForkThread(function()
-		    self:RemoveToggleCap('RULEUTC_SpecialToggle')
-            	    WaitSeconds(180)
-            	    self:AddToggleCap('RULEUTC_SpecialToggle')
-            	end)
+			self:AddToggleCap('RULEUTC_ShieldToggle')
+			ForkThread(function()
+				WaitTicks(1)
+				self:CreatePersonalShield(self:GetBlueprint().Enhancements.ShieldHeavy)
+				self:SetEnergyMaintenanceConsumptionOverride(500)
+				self:SetMaintenanceConsumptionActive()
+			end)
+			if Buff.HasBuff( self, 'AeonACUHunkerRegen' ) then
+				Buff.RemoveBuff( self, 'AeonACUHunkerRegen' )
+			end
+			--enable all reserched weapon
+			self.hunkerState = false
+			self.hunkerMethodCall = true
+			for label, state in self.hunkerwepstate do
+				if state then self:SetWeaponEnabledByLabel(label, true) end
+			end
+			self.hunkerMethodCall = false
+			#LOG(repr(self.hunkerwepstate))
+			ForkThread(function()
+				self:RemoveToggleCap('RULEUTC_SpecialToggle')
+				WaitSeconds(180)
+				self:AddToggleCap('RULEUTC_SpecialToggle')
+			end)
     	elseif bit == 1 then 
-		self:SetSpeedMult(5.0) 
+			self:SetSpeedMult(5.0) 
 	    	self.canTeleport = 'false'
         end
     end,

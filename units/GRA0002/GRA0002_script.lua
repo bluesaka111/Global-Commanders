@@ -10,10 +10,9 @@
 
 local CAirUnit = import('/lua/cybranunits.lua').CAirUnit
 local CWeapons = import('/lua/cybranweapons.lua')
-local GCWeapons = import('/mods/Global Commanders Enhanced/lua/GCweapons.lua')
+local GCWeapons = import('/mods/Global Commanders/lua/GCweapons.lua')
 local CAAMissileNaniteWeapon = CWeapons.CAAMissileNaniteWeapon
 local RedLaserGenerator = GCWeapons.RedLaserGenerator
-local EffectUtil = import('/lua/EffectUtilities.lua')
 
 GRA0002 = Class(CAirUnit) {
 
@@ -29,10 +28,6 @@ GRA0002 = Class(CAirUnit) {
         self.Drone = droneName
     end,
 
-    CreateBuildEffects = function( self, unitBeingBuilt, order )
-       EffectUtil.CreateCybranBuildBeams( self, unitBeingBuilt, self:GetBlueprint().General.BuildBones.BuildEffectBones, self.BuildEffectsBag )
-    end,
-
     OnCreate = function(self, builder, layer)
     	CAirUnit.OnCreate(self,builder,layer)
         self:ForkThread(self.HeartBeatDistanceCheck)
@@ -43,25 +38,20 @@ GRA0002 = Class(CAirUnit) {
 
     HeartBeatDistanceCheck = function(self)
         self.AwayFromCarrier = false
+
         while self and not self:IsDead() and not self.Parent:IsDead() do
-            WaitSeconds(0.33)
+            WaitSeconds(2)
             if not self:IsDead() and not self.Parent:IsDead() then
-				if self.Parent:IsIdleState() then
-					local dronePos = self:GetPosition()
-					local parentPos = self.Parent:GetPosition()
-					local distance = VDist2(dronePos[1], dronePos[3], parentPos[1], parentPos[3])
-					if distance > 40 and self.AwayFromCarrier == false then
-						IssueStop({self})
-						IssueClearCommands({self})
-						self.AwayFromCarrier = true
-						self:ForkThread(self.GuardCarrier)
-					elseif distance <= 32 and self.AwayFromCarrier == true then
-						self.AwayFromCarrier = false
-					end
-				elseif self:Parent:IsUnitState('Building') or self:Parent:IsUnitState('Upgrading') or self:Parent:IsUnitState('Repairing') or self:Parent:IsUnitState('Reclaiming') then
-					IssueStop({self})
-					IssueClearCommands({self})
-					IssueFactoryAssist({self}, self.Parent)
+                local dronePos = self:GetPosition()
+                local parentPos = self.Parent:GetPosition()
+                local distance = VDist2(dronePos[1], dronePos[3], parentPos[1], parentPos[3])
+                if distance > 80 and self.AwayFromCarrier == false then
+                    IssueStop({self})
+                    IssueClearCommands({self})
+                    self.AwayFromCarrier = true
+                    self:ForkThread(self.GuardCarrier)
+                elseif distance <= 64 and self.AwayFromCarrier == true then
+                    self.AwayFromCarrier = false
 				end
 			end
 		end
@@ -96,6 +86,7 @@ GRA0002 = Class(CAirUnit) {
         IssueClearCommands(self)
         if not self.Parent:IsDead() then
             self.Parent:NotifyOfDroneDeath(self.Drone)
+            table.removeByValue(self.Parent.DroneTable, self)
             self.Parent = nil
         end
         CAirUnit.OnKilled(self, instigator, type, overkillRatio)

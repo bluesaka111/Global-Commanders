@@ -98,16 +98,16 @@ UnitBlueprint {
         'RECLAIMABLE',
         'SHOWATTACKRETICLE',
         'OVERLAYANTIAIR',
-		'OVERLAYDIRECTFIRE',
+	'OVERLAYDIRECTFIRE',
     },
     CollisionOffsetZ = -0.07,
     Defense = {
         AirThreatLevel = 0,
         ArmorType = 'Normal',
         EconomyThreatLevel = 0,
-        Health = 100000,
-        MaxHealth = 100000,
-        RegenRate = 100,
+        Health = 10000,
+        MaxHealth = 10000,
+        RegenRate = 10,
         SubThreatLevel = 0,
         SurfaceThreatLevel = 5,
     },
@@ -133,8 +133,6 @@ UnitBlueprint {
         BuildCostEnergy = 15000,
         BuildCostMass = 2000,
         BuildTime = 1000,
-		BuildRate = 200,
-		MaxBuildDistance = 40,
     },
     Footprint = {
         MaxSlope = 0.25,
@@ -142,12 +140,6 @@ UnitBlueprint {
         SizeZ = 1,
     },
     General = {
-		BuildBones = {
-            BuildBones = {
-            BuildEffectBones = {
-                0,
-            },
-        },
         CapCost = 0,
         Category = 'Gunship',
         Classification = 'RULEUC_MilitaryAircraft',
@@ -155,7 +147,7 @@ UnitBlueprint {
             RULEUCC_Attack = true,
             RULEUCC_CallTransport = true,
             RULEUCC_Capture = false,
-            RULEUCC_Dock = false,
+            RULEUCC_Dock = true,
             RULEUCC_Guard = true,
             RULEUCC_Move = true,
             RULEUCC_Nuke = false,

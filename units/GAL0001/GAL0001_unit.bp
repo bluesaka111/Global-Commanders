@@ -276,8 +276,10 @@ UnitBlueprint {
         BuildTime = 600000,
         BuildableCategory = {
             'BUILTBYCOMMANDER AEON',
+			'BUILTBYTIER1COMMANDER AEON',
             'BUILTBYTIER2COMMANDER AEON',
             'BUILTBYTIER3COMMANDER AEON',
+			'BUILTBYTIER4COMMANDER AEON',
         },
         InitialRemoteViewingEnergyDrain = 1000,
         MaintenanceConsumptionPerSecondEnergy = 0,
@@ -353,8 +355,8 @@ UnitBlueprint {
             BuildTime = 1500,
             Icon = 'lrd',
             Name = '<LOC enhancements_GCA01>Resource Drone',
-	    Prerequisite = 'ResourceAllocationAdvanced',
-	    Slot = 'Back',
+			Prerequisite = 'ResourceAllocationAdvanced',
+			Slot = 'Back',
             UpgradeEffectBones = {
                 'Back_Upgrade',
                 'AttachSpecial01',
@@ -369,7 +371,7 @@ UnitBlueprint {
             BuildTime = 1500,
             Icon = 'rrd',
             Name = '<LOC enhancements_GCA01>Resource Drone',
-	    Prerequisite = 'LeftPod',
+			Prerequisite = 'LeftPod',
             Slot = 'Back',
             UpgradeEffectBones = {
                 'Back_Upgrade',
@@ -387,7 +389,7 @@ UnitBlueprint {
             ImpactEffects = 'AeonShieldHit01',
             MaintenanceConsumptionPerSecondEnergy = 250,
             Name = '<LOC enhancements_0014>Personal Shield Generator',
-            OwnerShieldMesh = '/Mods/Global Commanders/units/gal0001/gal0001_phaseshield_mesh',
+            OwnerShieldMesh = '/Mods/Global Commanders Enhanced/units/gal0001/gal0001_phaseshield_mesh',
             RegenAssistMult = 10,
             ShieldEnergyDrainRechargeTime = 5,
             ShieldMaxHealth = 29000,
@@ -413,7 +415,7 @@ UnitBlueprint {
             ImpactEffects = 'AeonShieldHit01',
             MaintenanceConsumptionPerSecondEnergy = 500,
             Name = '<LOC enhancements_0015>Heavy Personal Shield Generator',
-            OwnerShieldMesh = '/Mods/Global Commanders/units/gal0001/gal0001_phaseshield_mesh',
+            OwnerShieldMesh = '/Mods/Global Commanders Enhanced/units/gal0001/gal0001_phaseshield_mesh',
             Prerequisite = 'Shield',
             ShieldEnergyDrainRechargeTime = 5,
             ShieldMaxHealth = 44000,
@@ -449,7 +451,7 @@ UnitBlueprint {
             BuildTime = 2500,
             Icon = 'ar',
             Name = '<LOC enhancements_GCA03>Health',
-	    NewHealth = 50000,
+			NewHealth = 50000,
             Slot = 'Back',
             UpgradeEffectBones = {
                 'Torso',
@@ -485,7 +487,7 @@ UnitBlueprint {
                 'Back_Upgrade',
             },
             Prerequisite = 'SpeedIncrease',
-	    Slot = 'Back',
+			Slot = 'Back',
             UpgradeEffectBones = {
                 'Torso',
             },
@@ -797,6 +799,7 @@ UnitBlueprint {
             BuildCostEnergy =  990000,
             BuildCostMass =  11250,
             BuildTime = 40500,
+			BuildableCategoryAdds = 'BUILTBYTIER4COMMANDER AEON',
             Icon = 't4',
             Name = '<LOC enhancements_GCA17>Tech 4 Engineering Suite',
             NewBuildRate = 2500,
@@ -1398,7 +1401,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.3,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 35,
-            ProjectileId = '/Mods/Global Commanders/projectiles/AAAOblivionMissile/AAAOblivionMissile_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/AAAOblivionMissile/AAAOblivionMissile_proj.bp',
             ProjectileLifetime = 5,
             ProjectilesPerOnFire = 4,
             RackBones = {
@@ -1472,7 +1475,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.3,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 35,
-            ProjectileId = '/Mods/Global Commanders/projectiles/AAAOblivionMissile/AAAOblivionMissile_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/AAAOblivionMissile/AAAOblivionMissile_proj.bp',
             ProjectileLifetime = 5,
             ProjectilesPerOnFire = 4,
             RackBones = {
@@ -1546,7 +1549,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.3,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 35,
-            ProjectileId = '/Mods/Global Commanders/projectiles/AAAOblivionMissile/AAAOblivionMissile_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/AAAOblivionMissile/AAAOblivionMissile_proj.bp',
             ProjectileLifetime = 5,
             ProjectilesPerOnFire = 4,
             RackBones = {
@@ -1620,7 +1623,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0.3,
             MuzzleSalvoSize = 4,
             MuzzleVelocity = 35,
-            ProjectileId = '/Mods/Global Commanders/projectiles/AAAOblivionMissile/AAAOblivionMissile_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/AAAOblivionMissile/AAAOblivionMissile_proj.bp',
             ProjectileLifetime = 5,
             ProjectilesPerOnFire = 4,
             RackBones = {
@@ -1770,7 +1773,7 @@ UnitBlueprint {
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 30,
             NotExclusive = true,
-            ProjectileId = '/Mods/Global Commanders/projectiles/ADFSuperCannon/ADFSuperCannon_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/ADFSuperCannon/ADFSuperCannon_proj.bp',
             ProjectileLifetime = 10,
             RackBones = {
                 {
@@ -2070,7 +2073,7 @@ UnitBlueprint {
             MuzzleSalvoDelay = 0,
             MuzzleSalvoSize = 1,
             MuzzleVelocity = 0,
-            ProjectileId = '/Mods/Global Commanders/projectiles/AIFCruiseMissile/AIFCruiseMissile_proj.bp',
+            ProjectileId = '/Mods/Global Commanders Enhanced/projectiles/AIFCruiseMissile/AIFCruiseMissile_proj.bp',
             ProjectilesPerOnFire = 1,
             RackBones = {
                 {
